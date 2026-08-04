@@ -466,6 +466,42 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   border-top: 1px solid var(--border-color);
 }
 
+/* ---------------------------------------------------------------- LABORATÓRIOS PRÁTICOS */
+.labs-warning {
+  background: rgba(255,185,0,0.15);
+  border: 1px solid var(--color-warning);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.lab-card { position: relative; }
+.lab-card.lab-done { border-color: var(--color-accent); }
+.lab-done-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: rgba(80,230,165,0.2);
+  color: #107C10;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.lab-detail-card { margin-top: 1rem; }
+.lab-steps { padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.lab-steps li { line-height: 1.5; }
+
+.lab-quiz-question {
+  background: var(--bg-surface-alt);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* ---------------------------------------------------------------- PRE-AUTH (landing/login) */
 body.pre-auth .app-nav,
 body.pre-auth .header-right #xp-indicator,
