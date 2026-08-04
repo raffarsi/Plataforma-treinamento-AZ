@@ -227,6 +227,67 @@ const LAB_BANK = [
 },
 {
   id: 11,
+  icon: `🚀`,
+  title: `Azure App Service — publicar uma Web App (PaaS)`,
+  domain: `Modelos IaaS, PaaS e SaaS`,
+  objective: `Provisionar um App Service (PaaS) para hospedar uma aplicação web, comparando o nível de gerenciamento exigido em relação à VM (IaaS) criada no Laboratório 2.`,
+  steps: [
+    `Pesquise por "Serviços de Aplicativos" (App Services) no portal e clique em "+ Criar" > "Aplicativo Web".`,
+    `Selecione o grupo de recursos rg-lab-az900, dê um nome único ao Web App (ex.: app-lab-az900-xxxx), escolha a pilha de runtime (ex.: .NET, Node.js ou Python) e o sistema operacional.`,
+    `Em "Plano do Serviço de Aplicativo (App Service Plan)", clique em "Criar novo" e escolha a camada de preços "F1 Grátis" (Free).`,
+    `Clique em "Revisar + criar" e depois em "Criar".`,
+    `Após a implantação, acesse o recurso e clique na URL padrão gerada (algo.azurewebsites.net) para ver a aplicação padrão já publicada automaticamente.`,
+    `No menu do App Service, explore a aba "Configuração" e observe que não há nenhuma opção de sistema operacional, patches ou discos — apenas configurações da aplicação.`,
+    `Compare com o Laboratório 2: quais tarefas de manutenção você teve que decidir na VM (SO, tamanho, portas, atualizações) e quais delas simplesmente não existem aqui no App Service.`
+  ],
+  quiz: [
+    { q: `O que a camada de preços "F1 Grátis" do App Service Plan oferece?`, opts: [`Um plano gratuito com recursos limitados, ideal para testes e cargas pequenas`, `Armazenamento em blob ilimitado`, `Um domínio personalizado com SSL pago automaticamente`, `Acesso root ao sistema operacional subjacente`], correct: 0, exp: `A camada F1 (Free) oferece computação e armazenamento limitados, sem custo, adequada para testes e protótipos, mas sem recursos como domínio customizado com SSL.` },
+    { q: `Qual é a principal diferença entre o modelo PaaS (App Service) usado neste laboratório e o modelo IaaS (VM) do Laboratório 2, em termos de responsabilidade de gerenciamento?`, opts: [`No PaaS, a Microsoft gerencia o sistema operacional, o patching e a infraestrutura subjacente, deixando o cliente responsável apenas pelo código e configuração da aplicação`, `No PaaS o cliente gerencia tudo, incluindo o sistema operacional`, `Não há diferença prática entre IaaS e PaaS`, `No IaaS a Microsoft gerencia automaticamente o sistema operacional da VM`], correct: 0, exp: `PaaS abstrai a infraestrutura e o SO — o cliente foca só na aplicação. Em IaaS (a VM do Laboratório 2), o cliente é responsável por SO, patches e configuração de rede.` },
+    { q: `Por que um App Service é considerado um serviço PaaS (Platform as a Service)?`, opts: [`Porque fornece uma plataforma pronta para hospedar aplicações, abstraindo a infraestrutura e o sistema operacional subjacentes`, `Porque exige que o cliente instale o próprio sistema operacional`, `Porque cobra apenas por hora de uso de hardware físico dedicado`, `Porque é hospedado fora da infraestrutura do Azure`], correct: 0, exp: `PaaS entrega uma plataforma completa (runtime, SO gerenciado, escalonamento) pronta para receber o código da aplicação, sem o cliente precisar administrar a infraestrutura.` }
+  ]
+},
+{
+  id: 12,
+  icon: `💡`,
+  title: `Azure Advisor — recomendações personalizadas`,
+  domain: `Well-Architected Framework`,
+  objective: `Explorar as recomendações do Azure Advisor sobre os recursos já criados nos laboratórios anteriores, relacionando-as aos pilares do Well-Architected Framework.`,
+  steps: [
+    `Pesquise por "Advisor" no portal do Azure.`,
+    `Na visão geral do Advisor, observe o "Score" (pontuação) geral e os scores por categoria: Confiabilidade, Segurança, Desempenho, Excelência Operacional e Custos.`,
+    `Clique na categoria "Custos" e veja se há alguma recomendação relacionada aos recursos do grupo rg-lab-az900 (ex.: redimensionar ou excluir recursos ociosos).`,
+    `Clique na categoria "Segurança" e observe as recomendações (podem levar algumas horas para aparecer após a criação dos recursos; se ainda não houver nenhuma, veja os exemplos de recomendação exibidos na tela).`,
+    `Abra uma recomendação qualquer e leia a descrição do "impacto" e a "ação recomendada" sugerida pelo Advisor.`,
+    `Relacione cada categoria do Advisor (Confiabilidade, Segurança, Desempenho, Excelência Operacional, Custos) com os cinco pilares do Well-Architected Framework.`
+  ],
+  quiz: [
+    { q: `O que o Azure Advisor faz?`, opts: [`Analisa a configuração dos seus recursos e sugere recomendações personalizadas de custo, segurança, confiabilidade, desempenho e excelência operacional`, `Cria automaticamente novos recursos sem intervenção do usuário`, `Substitui completamente a necessidade do Azure Monitor`, `Gerencia faturas e realiza pagamentos automaticamente`], correct: 0, exp: `O Advisor analisa continuamente a configuração e o uso dos recursos e recomenda ações personalizadas para melhorar custo, segurança, confiabilidade, desempenho e excelência operacional.` },
+    { q: `Quantas categorias principais de recomendação o Azure Advisor organiza?`, opts: [`Cinco: Confiabilidade, Segurança, Desempenho, Excelência Operacional e Custos`, `Duas: Bom e Ruim`, `Dez categorias distintas`, `Apenas uma: Segurança`], correct: 0, exp: `O Advisor organiza suas recomendações em cinco categorias: Confiabilidade, Segurança, Desempenho, Excelência Operacional e Custos.` },
+    { q: `Como as categorias do Azure Advisor se relacionam com o Well-Architected Framework?`, opts: [`Elas espelham diretamente os pilares do Well-Architected Framework, oferecendo recomendações práticas alinhadas a cada pilar`, `Não têm nenhuma relação entre si`, `O Advisor substitui o Well-Architected Framework como certificação`, `O Well-Architected Framework é apenas uma aba dentro do Advisor`], correct: 0, exp: `As categorias do Advisor (Confiabilidade, Segurança, Desempenho, Excelência Operacional, Custos) correspondem diretamente aos cinco pilares do Well-Architected Framework, tornando o Advisor uma ferramenta prática de aplicação desses princípios.` }
+  ]
+},
+{
+  id: 13,
+  icon: `📄`,
+  title: `Exportar template ARM`,
+  domain: `Azure Resource Manager`,
+  objective: `Exportar o template do Azure Resource Manager (ARM) de um grupo de recursos já criado, entendendo a base do provisionamento como código (Infrastructure as Code) no Azure.`,
+  steps: [
+    `Acesse o grupo de recursos rg-lab-az900 no portal.`,
+    `No menu lateral, clique em "Exportar template".`,
+    `Aguarde o Azure gerar o template JSON com base nos recursos atuais do grupo.`,
+    `Explore as abas "Template", "Parâmetros" e "Interface do usuário de implantação" geradas automaticamente.`,
+    `No template JSON, localize a seção "resources" e identifique ao menos dois tipos de recursos (ex.: Microsoft.Storage/storageAccounts, Microsoft.Compute/virtualMachines) que você criou nos laboratórios anteriores.`,
+    `Clique em "Baixar" para salvar uma cópia do template (opcional) e observe que ele poderia ser reutilizado para recriar o mesmo ambiente automaticamente.`
+  ],
+  quiz: [
+    { q: `O que é um template ARM (Azure Resource Manager)?`, opts: [`Um arquivo JSON que descreve declarativamente a infraestrutura e a configuração dos recursos do Azure`, `Um script executável escrito em Python`, `Um tipo específico de máquina virtual`, `Um relatório mensal de custos da assinatura`], correct: 0, exp: `Um template ARM é um arquivo JSON declarativo que define os recursos do Azure e suas propriedades, permitindo provisionamento consistente e repetível.` },
+    { q: `Qual é a principal vantagem de usar templates ARM em vez de criar recursos manualmente pelo portal?`, opts: [`Permite provisionar infraestrutura de forma consistente, repetível e versionável (Infraestrutura como Código)`, `É a única forma possível de criar um Grupo de Recursos`, `Reduz automaticamente o preço dos recursos provisionados`, `Elimina a necessidade de autenticação no Azure`], correct: 0, exp: `Templates ARM permitem tratar a infraestrutura como código: versionar, revisar e reaplicar as mesmas configurações de forma consistente entre ambientes.` },
+    { q: `Ao exportar o template de um grupo de recursos, o que a seção "resources" do JSON representa?`, opts: [`A lista declarativa de todos os recursos existentes naquele grupo, com seus tipos e propriedades`, `A lista de usuários com acesso ao grupo de recursos`, `O histórico de custos do grupo de recursos`, `As políticas de Azure Policy aplicadas ao grupo`], correct: 0, exp: `A seção "resources" do template ARM lista cada recurso do grupo com seu tipo (ex.: Microsoft.Storage/storageAccounts) e suas propriedades de configuração.` }
+  ]
+},
+{
+  id: 14,
   icon: `🧹`,
   title: `Limpeza — excluir o grupo de recursos`,
   domain: `Resource Groups`,
