@@ -164,13 +164,17 @@ const LAB_BANK = [
   icon: `🌍`,
   title: `Regiões e Availability Zones`,
   domain: `Regiões e Availability Zones`,
-  objective: `Explorar o mapa de regiões do Azure e identificar quais regiões oferecem Availability Zones.`,
+  objective: `Explorar a lista oficial de regiões do Azure e identificar quais regiões oferecem Availability Zones.`,
+  externalLink: {
+    url: `https://learn.microsoft.com/en-us/azure/reliability/regions-list`,
+    label: `🌍 Abrir Lista de Regiões do Azure`
+  },
   steps: [
-    `Acesse a página de infraestrutura global do Azure (pesquise "Azure global infrastructure regions map").`,
-    `Localize a região "Brazil South" e verifique se ela é listada com suporte a Availability Zones.`,
-    `Volte ao portal.azure.com, pesquise por "Máquinas Virtuais" e, ao iniciar a criação de uma nova (sem precisar concluir), observe se a opção "Zona de disponibilidade" aparece para a região escolhida.`,
-    `Compare com outra região (ex.: East US) e note a diferença na disponibilidade de zonas.`,
-    `Anote quantas Availability Zones a região com suporte geralmente oferece.`
+    `Clique no botão "🌍 Abrir Lista de Regiões do Azure" abaixo (página oficial da Microsoft: learn.microsoft.com/azure/reliability/regions-list) para ver a tabela com todas as regiões.`,
+    `Localize a região "Brazil South" na tabela e verifique, na coluna "Availability zone support", se ela é listada com suporte a Availability Zones.`,
+    `Volte ao portal.azure.com, pesquise por "Máquinas Virtuais" e, ao iniciar a criação de uma nova (sem precisar concluir), observe se a opção "Zona de disponibilidade" aparece para a região "Brazil South".`,
+    `Na mesma tabela, compare com uma região sem suporte a Availability Zones (ex.: "West US") e note a diferença na coluna "Availability zone support".`,
+    `Anote quantas Availability Zones uma região com suporte geralmente oferece (veja a documentação vinculada na página, "Availability zones overview").`
   ],
   quiz: [
     { q: `Quantas Availability Zones, no mínimo, uma região com suporte a esse recurso costuma oferecer?`, opts: [`Três`, `Uma`, `Dez`, `Nenhuma`], correct: 0, exp: `Regiões com suporte a Availability Zones normalmente possuem ao menos três zonas fisicamente separadas.` },

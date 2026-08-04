@@ -1023,6 +1023,7 @@ function renderLabDetail(lab, area) {
       <ol class="lab-steps">${lab.steps.map(s => `<li>${s}</li>`).join("")}</ol>
       <div class="game-actions">
         <a class="btn btn-primary" href="https://portal.azure.com" target="_blank" rel="noopener">🔗 Abrir Portal do Azure</a>
+        ${lab.externalLink ? `<a class="btn btn-primary" href="${lab.externalLink.url}" target="_blank" rel="noopener">${lab.externalLink.label}</a>` : ``}
         <button class="btn btn-secondary" id="lab-start-quiz-btn">✅ Já completei os passos — iniciar verificação</button>
       </div>
       <div id="lab-quiz-area"></div>
