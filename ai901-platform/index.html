@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Plataforma de Certificações Microsoft — AI-901 Prep Hub</title>
+<meta name="description" content="Plataforma completa de estudo, gamificação e simulados para a certificação Microsoft AI-901 (Azure AI Fundamentals)." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="pre-auth">
+
+<!-- =========================================================================
+     CABEÇALHO / NAVEGAÇÃO PRINCIPAL (oculto na tela de login)
+     ========================================================================= -->
+<header id="app-header">
+  <div class="app-brand">🤖 AI-901 Prep Hub</div>
+
+  <nav class="app-nav" aria-label="Navegação principal">
+    <button class="nav-btn" data-screen="dashboard">🏠 Início</button>
+    <button class="nav-btn" data-screen="bank">📖 Banco de Questões</button>
+    <button class="nav-btn" data-screen="simulado">📝 Simulado</button>
+    <button class="nav-btn" data-screen="games">🎮 Jogos</button>
+    <button class="nav-btn" data-screen="labs">🧪 Laboratórios</button>
+    <button class="nav-btn" data-screen="history">📊 Histórico</button>
+    <button class="nav-btn" data-screen="achievements">🏅 Conquistas</button>
+    <button class="nav-btn" data-screen="ranking">🏆 Ranking</button>
+  </nav>
+
+  <div class="header-right">
+    <div id="xp-indicator">
+      <span id="xp-label">Nível 1 · 0/150 XP</span>
+      <div id="xp-bar-outer" class="xp-bar-outer"><div id="xp-bar-fill" class="xp-bar-fill" style="width:0%"></div></div>
+    </div>
+    <span id="student-badge" class="student-badge"></span>
+    <button id="back-to-hub-btn" class="btn-mini" title="Voltar para a página inicial">⬅️ Trilhas</button>
+    <button id="switch-student-btn" class="btn-mini" title="Trocar aluno">🔄 Trocar aluno</button>
+    <button id="theme-toggle" aria-label="Alternar tema claro/escuro">🌙 Modo escuro</button>
+  </div>
+</header>
+
+<!-- =========================================================================
+     CONTEÚDO PRINCIPAL — cada <section> é preenchida dinamicamente pelo app.js
+     ========================================================================= -->
+<main id="app-main">
+
+  <section id="screen-login" class="screen" aria-label="Identificação do aluno"></section>
+
+  <section id="screen-dashboard" class="screen" aria-label="Painel inicial"></section>
+
+  <section id="screen-bank" class="screen" aria-label="Banco de questões"></section>
+
+  <section id="screen-simulado" class="screen" aria-label="Simulado personalizado"></section>
+
+  <section id="screen-games" class="screen" aria-label="Jogos de gamificação"></section>
+
+  <section id="screen-labs" class="screen" aria-label="Laboratórios práticos no Microsoft Foundry"></section>
+
+  <section id="screen-history" class="screen" aria-label="Histórico de simulados"></section>
+
+  <section id="screen-achievements" class="screen" aria-label="Conquistas"></section>
+
+  <section id="screen-ranking" class="screen" aria-label="Ranking entre alunos"></section>
+
+</main>
+
+<footer id="app-footer">
+  AI-901 Prep Hub — Plataforma educacional independente, sem vínculo oficial com a Microsoft. Feita para apoiar a preparação para o exame AI-901 (Azure AI Fundamentals).
+</footer>
+
+<div id="toast-container" aria-live="polite"></div>
+
+<!-- =========================================================================
+     SCRIPTS — ordem importa: dados, jogos e por último o motor da aplicação
+     ========================================================================= -->
+<script src="js/questions.js"></script>
+<script src="js/games.js"></script>
+<script src="js/labs.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
