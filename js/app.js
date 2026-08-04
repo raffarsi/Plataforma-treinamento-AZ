@@ -301,18 +301,17 @@ RENDERERS.landing = function renderLanding() {
           <h3>AZ-900</h3>
           <p>Microsoft Azure Fundamentals</p>
         </button>
-        <button class="track-card track-disabled" id="track-ai900" disabled>
+        <button class="track-card track-active" id="track-ai900">
           <span class="track-icon">🤖</span>
-          <h3>AI-900 / AI-901</h3>
+          <h3>AI-901</h3>
           <p>Microsoft AI Fundamentals</p>
-          <span class="track-badge">Em desenvolvimento. Disponível em breve.</span>
         </button>
       </div>
     </div>
   `;
   document.getElementById("track-az900").addEventListener("click", goToLogin);
   document.getElementById("track-ai900").addEventListener("click", () => {
-    showToast("🚧 AI-900 / AI-901: Em desenvolvimento. Disponível em breve.", true);
+    window.location.href = "ai901-platform/index.html";
   });
 };
 
