@@ -184,7 +184,7 @@ const GENERAL_ACHIEVEMENTS = [
     check: p => (p.stats.labsCompleted || []).length >= 1 },
   { id: "mao_na_massa", name: "Mão na Massa", icon: "🛠️", desc: "Complete 5 laboratórios práticos.",
     check: p => (p.stats.labsCompleted || []).length >= 5 },
-  { id: "engenheiro_nuvem", name: "Engenheiro de Nuvem", icon: "☁️", desc: "Complete todos os 10 laboratórios práticos.",
+  { id: "engenheiro_nuvem", name: "Engenheiro de Nuvem", icon: "☁️", desc: "Complete todos os 11 laboratórios práticos.",
     check: p => (p.stats.labsCompleted || []).length >= LAB_BANK.length },
 ];
 
@@ -991,7 +991,7 @@ RENDERERS.labs = function renderLabsMenu() {
   el.innerHTML = `
     <h2>🧪 Laboratórios Práticos</h2>
     <p class="lead">Coloque a mão na massa no portal real do Azure. Cada laboratório traz um passo a passo guiado e, ao final, um pequeno teste de verificação — só quem realmente navegou pelas telas responde com facilidade.</p>
-    <div class="labs-warning">⚠️ Use uma conta Azure gratuita ou de testes. Ao final de cada sessão, não esqueça do Laboratório 10 (Limpeza) para excluir os recursos criados e evitar cobranças.</div>
+    <div class="labs-warning">⚠️ Use uma conta Azure gratuita ou de testes. Ao final de cada sessão, não esqueça do Laboratório 11 (Limpeza) para excluir os recursos criados e evitar cobranças.</div>
     <div class="games-grid" id="labs-grid"></div>
     <div id="lab-detail-area"></div>
   `;

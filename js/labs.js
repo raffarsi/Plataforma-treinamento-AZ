@@ -205,6 +205,28 @@ const LAB_BANK = [
 },
 {
   id: 10,
+  icon: `🌐`,
+  title: `Virtual Network e Network Security Group`,
+  domain: `Networking`,
+  objective: `Criar uma Virtual Network (VNet), adicionar uma sub-rede e configurar um Network Security Group (NSG) para controlar o tráfego de entrada.`,
+  steps: [
+    `Pesquise por "Redes virtuais" no portal e clique em "+ Criar".`,
+    `Selecione o grupo de recursos rg-lab-az900, dê um nome à VNet (ex.: vnet-lab-az900) e escolha a região "Brazil South".`,
+    `Na aba "Endereços IP", observe o espaço de endereçamento padrão (ex.: 10.0.0.0/16) e a sub-rede padrão criada automaticamente.`,
+    `Clique em "Revisar + criar" e depois em "Criar".`,
+    `Após a implantação, acesse a VNet criada, vá em "Sub-redes" e adicione uma nova sub-rede (ex.: sub-web, intervalo 10.0.1.0/24).`,
+    `Pesquise por "Grupos de segurança de rede" e crie um novo NSG (ex.: nsg-lab-az900) no mesmo grupo de recursos e região.`,
+    `Abra o NSG criado, vá em "Regras de segurança de entrada" > "+ Adicionar" e crie uma regra permitindo a porta 443 (HTTPS), prioridade 100.`,
+    `Volte à VNet, acesse "Sub-redes", edite a sub-rede sub-web e associe o NSG criado a ela.`
+  ],
+  quiz: [
+    { q: `O que uma Virtual Network (VNet) fornece dentro do Azure?`, opts: [`Um ambiente de rede privado e isolado, com endereçamento IP próprio, para os recursos do Azure se comunicarem entre si e com a internet`, `Um banco de dados relacional gerenciado`, `Um sistema de arquivos compartilhado entre VMs`, `Um serviço de autenticação multifator`], correct: 0, exp: `A VNet é a construção fundamental de rede privada no Azure, permitindo isolamento, segmentação e comunicação segura entre recursos.` },
+    { q: `Qual é o propósito de dividir uma VNet em sub-redes (subnets), como feito neste laboratório?`, opts: [`Organizar e segmentar os recursos logicamente, permitindo aplicar regras de segurança e roteamento específicos por segmento`, `Aumentar automaticamente a velocidade da internet`, `Reduzir o custo de armazenamento`, `Substituir a necessidade de um Grupo de Recursos`], correct: 0, exp: `Sub-redes dividem o espaço de endereçamento da VNet em segmentos menores, permitindo isolar camadas (ex.: web, banco de dados) e aplicar políticas de segurança específicas a cada uma.` },
+    { q: `Qual é a função de um Network Security Group (NSG), segundo a regra criada neste laboratório?`, opts: [`Filtrar o tráfego de rede de entrada e saída com base em regras de origem, destino, porta e protocolo`, `Criptografar automaticamente todos os discos da assinatura`, `Gerenciar o orçamento e os alertas de custo`, `Definir quais usuários têm acesso de leitura ao portal`], correct: 0, exp: `NSGs atuam como um firewall básico em nível de sub-rede ou interface de rede, permitindo ou bloqueando tráfego conforme regras definidas por prioridade, protocolo, porta e origem/destino.` }
+  ]
+},
+{
+  id: 11,
   icon: `🧹`,
   title: `Limpeza — excluir o grupo de recursos`,
   domain: `Resource Groups`,
