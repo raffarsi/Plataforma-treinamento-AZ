@@ -32,7 +32,9 @@ function defaultStudentProfile(turma) {
         dragdropSets: [],
         lightning: false, lightningCount: 0
       },
-      gamesXP: { crossword: 0, wordsearch: 0, dragdrop: 0, lightning: 0 }
+      gamesXP: { crossword: 0, wordsearch: 0, dragdrop: 0, lightning: 0 },
+      labsCompleted: [], // ids dos laboratórios concluídos (nota >= 2/3 no quiz)
+      labXP: 0
     },
     history: [] // histórico de simulados
   };
@@ -178,6 +180,12 @@ const GENERAL_ACHIEVEMENTS = [
     check: p => levelInfo(p.xp).level >= 5 },
   { id: "especialista_azure", name: "Especialista em Azure", icon: "🌟", desc: "Alcance o nível 10.",
     check: p => levelInfo(p.xp).level >= 10 },
+  { id: "praticante", name: "Praticante", icon: "🧪", desc: "Complete seu primeiro laboratório prático no portal do Azure.",
+    check: p => (p.stats.labsCompleted || []).length >= 1 },
+  { id: "mao_na_massa", name: "Mão na Massa", icon: "🛠️", desc: "Complete 5 laboratórios práticos.",
+    check: p => (p.stats.labsCompleted || []).length >= 5 },
+  { id: "engenheiro_nuvem", name: "Engenheiro de Nuvem", icon: "☁️", desc: "Complete todos os 10 laboratórios práticos.",
+    check: p => (p.stats.labsCompleted || []).length >= LAB_BANK.length },
 ];
 
 // Uma conquista "Expert em <domínio>" para cada um dos 20 domínios do edital,
@@ -426,12 +434,14 @@ RENDERERS.dashboard = function renderDashboard() {
       <div class="stat-card"><span class="stat-value">${p.stats.totalAnswered}</span><span class="stat-label">Questões respondidas</span></div>
       <div class="stat-card"><span class="stat-value">${accuracy}%</span><span class="stat-label">Taxa de acerto geral</span></div>
       <div class="stat-card"><span class="stat-value">${p.stats.simuladosCompleted}</span><span class="stat-label">Simulados concluídos</span></div>
+      <div class="stat-card"><span class="stat-value">${(p.stats.labsCompleted || []).length}/${LAB_BANK.length}</span><span class="stat-label">Laboratórios concluídos</span></div>
       <div class="stat-card"><span class="stat-value">${p.unlockedAchievements.length}/${ACHIEVEMENTS.length}</span><span class="stat-label">Conquistas</span></div>
     </div>
     <div class="dashboard-actions">
       <button class="btn btn-primary" data-go="bank">📖 Praticar no Banco de Questões</button>
       <button class="btn btn-primary" data-go="simulado">📝 Fazer um Simulado</button>
       <button class="btn btn-primary" data-go="games">🎮 Jogar e Ganhar XP</button>
+      <button class="btn btn-primary" data-go="labs">🧪 Laboratórios Práticos</button>
       <button class="btn btn-secondary" data-go="ranking">🏆 Ver Ranking</button>
       <button class="btn btn-secondary" data-go="history">📊 Ver Histórico e Desempenho</button>
     </div>
@@ -973,6 +983,135 @@ function openGame(key) {
 }
 
 // ----------------------------------------------------------------------------
+// 13b) LABORATÓRIOS PRÁTICOS (portal real do Azure)
+// ----------------------------------------------------------------------------
+RENDERERS.labs = function renderLabsMenu() {
+  const el = document.getElementById("screen-labs");
+  const p = currentProfile();
+  el.innerHTML = `
+    <h2>🧪 Laboratórios Práticos</h2>
+    <p class="lead">Coloque a mão na massa no portal real do Azure. Cada laboratório traz um passo a passo guiado e, ao final, um pequeno teste de verificação — só quem realmente navegou pelas telas responde com facilidade.</p>
+    <div class="labs-warning">⚠️ Use uma conta Azure gratuita ou de testes. Ao final de cada sessão, não esqueça do Laboratório 10 (Limpeza) para excluir os recursos criados e evitar cobranças.</div>
+    <div class="games-grid" id="labs-grid"></div>
+    <div id="lab-detail-area"></div>
+  `;
+  const grid = document.getElementById("labs-grid");
+  LAB_BANK.forEach(lab => {
+    const done = p && (p.stats.labsCompleted || []).includes(lab.id);
+    const card = document.createElement("div");
+    card.className = "game-card lab-card" + (done ? " lab-done" : "");
+    card.innerHTML = `<span class="game-icon">${lab.icon}</span><h3>${lab.id}. ${lab.title}</h3><p>${lab.domain}</p>${done ? `<span class="lab-done-badge">✅ Concluído</span>` : ``}`;
+    card.addEventListener("click", () => openLab(lab.id));
+    grid.appendChild(card);
+  });
+};
+
+function openLab(id) {
+  const lab = LAB_BANK.find(l => l.id === id);
+  const area = document.getElementById("lab-detail-area");
+  area.scrollIntoView({ behavior: "smooth" });
+  renderLabDetail(lab, area);
+}
+
+function renderLabDetail(lab, area) {
+  area.innerHTML = `
+    <div class="question-card lab-detail-card">
+      <span class="question-domain-tag">${lab.domain}</span>
+      <h3>${lab.icon} Laboratório ${lab.id}: ${lab.title}</h3>
+      <p><strong>Objetivo:</strong> ${lab.objective}</p>
+      <h4 class="feedback-section-title">📋 Passo a passo</h4>
+      <ol class="lab-steps">${lab.steps.map(s => `<li>${s}</li>`).join("")}</ol>
+      <div class="game-actions">
+        <a class="btn btn-primary" href="https://portal.azure.com" target="_blank" rel="noopener">🔗 Abrir Portal do Azure</a>
+        <button class="btn btn-secondary" id="lab-start-quiz-btn">✅ Já completei os passos — iniciar verificação</button>
+      </div>
+      <div id="lab-quiz-area"></div>
+    </div>
+  `;
+  document.getElementById("lab-start-quiz-btn").addEventListener("click", () => renderLabQuiz(lab, area));
+}
+
+function renderLabQuiz(lab, area) {
+  const quizArea = document.getElementById("lab-quiz-area");
+  quizArea.innerHTML = `
+    <h4 class="feedback-section-title">🔎 Verificação de conclusão</h4>
+    <p class="lead">Responda com base no que você viu no portal.</p>
+    <div id="lab-quiz-questions"></div>
+    <button class="btn btn-primary" id="lab-submit-quiz-btn">Verificar respostas</button>
+    <div id="lab-quiz-result"></div>
+  `;
+  const qWrap = document.getElementById("lab-quiz-questions");
+  lab.quiz.forEach((q, qi) => {
+    const block = document.createElement("div");
+    block.className = "lab-quiz-question";
+    block.innerHTML = `<p class="question-text">${qi + 1}. ${q.q}</p>`;
+    const optsWrap = document.createElement("div");
+    optsWrap.className = "options-list";
+    q.opts.forEach((opt, oi) => {
+      const btn = document.createElement("button");
+      btn.className = "btn btn-option";
+      btn.textContent = opt;
+      btn.dataset.qi = qi;
+      btn.dataset.oi = oi;
+      btn.addEventListener("click", () => {
+        optsWrap.querySelectorAll(".btn-option").forEach(b => b.classList.remove("opt-selected"));
+        btn.classList.add("opt-selected");
+        block.dataset.selected = oi;
+      });
+      optsWrap.appendChild(btn);
+    });
+    block.appendChild(optsWrap);
+    qWrap.appendChild(block);
+  });
+
+  document.getElementById("lab-submit-quiz-btn").addEventListener("click", () => {
+    const blocks = [...qWrap.querySelectorAll(".lab-quiz-question")];
+    if (blocks.some(b => b.dataset.selected === undefined)) {
+      showToast("Responda todas as perguntas antes de verificar.");
+      return;
+    }
+    let correctCount = 0;
+    blocks.forEach((block, qi) => {
+      const q = lab.quiz[qi];
+      const selected = parseInt(block.dataset.selected, 10);
+      const isCorrect = selected === q.correct;
+      if (isCorrect) correctCount++;
+      const optsWrap = block.querySelector(".options-list");
+      [...optsWrap.children].forEach((btn, oi) => {
+        btn.disabled = true;
+        if (oi === q.correct) btn.classList.add("opt-correct");
+        else if (oi === selected) btn.classList.add("opt-wrong");
+      });
+      const expBox = document.createElement("div");
+      expBox.className = "dica-box";
+      expBox.innerHTML = `💡 ${q.exp}`;
+      block.appendChild(expBox);
+    });
+
+    const total = lab.quiz.length;
+    const passed = correctCount >= Math.ceil(total * 2 / 3);
+    const xp = correctCount * 15 + (passed ? 20 : 0);
+    const result = document.getElementById("lab-quiz-result");
+    result.className = "game-result " + (passed ? "result-perfect" : "result-partial");
+    result.textContent = passed
+      ? `✅ Laboratório concluído! Você acertou ${correctCount}/${total} e ganhou ${xp} XP.`
+      : `Você acertou ${correctCount}/${total}. Revise os passos no portal e tente novamente para concluir o laboratório.`;
+
+    addXP(xp, `Laboratório: ${lab.title}`);
+
+    const p = currentProfile();
+    p.stats.labXP += xp;
+    if (passed && !(p.stats.labsCompleted || []).includes(lab.id)) {
+      p.stats.labsCompleted = p.stats.labsCompleted || [];
+      p.stats.labsCompleted.push(lab.id);
+      logActivity("laboratorios", { score: p.stats.labsCompleted.length, total: LAB_BANK.length, xp: p.stats.labXP, timeSpent: 0, lab: lab.title });
+    }
+    saveState();
+    runAchievementCheck();
+  });
+}
+
+// ----------------------------------------------------------------------------
 // 14) HISTÓRICO E DESEMPENHO
 // ----------------------------------------------------------------------------
 RENDERERS.history = function renderHistory() {
@@ -1041,6 +1180,7 @@ const RANKING_TABS = [
   { key: "cacapalavras", label: "🔍 Caça-Palavras" },
   { key: "dragdrop", label: "🎯 Drag and Drop" },
   { key: "simulados", label: "📝 Simulados" },
+  { key: "laboratorios", label: "🧪 Laboratórios" },
 ];
 
 RENDERERS.ranking = function renderRanking() {
@@ -1078,7 +1218,7 @@ function renderRankingTable(key) {
     return;
   }
 
-  const typeMap = { cruzadinha: "cruzadinha", cacapalavras: "cacapalavras", dragdrop: "dragdrop", simulados: "simulados" };
+  const typeMap = { cruzadinha: "cruzadinha", cacapalavras: "cacapalavras", dragdrop: "dragdrop", simulados: "simulados", laboratorios: "laboratorios" };
   const entries = STATE.activityLog.filter(e => e.type === typeMap[key]);
   const bestByStudent = {};
   entries.forEach(e => {
