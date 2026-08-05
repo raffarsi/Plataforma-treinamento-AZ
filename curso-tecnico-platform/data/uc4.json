@@ -1,0 +1,19 @@
+{
+  "uc_code": "UC4",
+  "uc_title": "Projeto Integrador — Assistente de Suporte e Manutenção de Computadores",
+  "carga_horaria_horas": 20,
+  "qualificacao": "Assistente de Suporte e Manutenção de Computadores",
+  "is_projeto_integrador": true,
+  "indicadores": [
+    "Cumpre as atividades previstas no plano de ação, conforme desafio identificado no tema gerador.",
+    "Apresenta resultados ou soluções de acordo com as problemáticas do tema gerador e objetivos do Projeto Integrador."
+  ],
+  "aulas": [
+    {"numero":1,"titulo":"Apresentação do Projeto Integrador e Escolha do Tema Gerador","indicadores":[1],"conteudo":["Objetivos e indicadores de avaliação do Projeto Integrador (UCPI).","Proposta 1: montagem, instalação e manutenção de computadores cliente para uma organização.","Proposta 2: captação, inspeção, testes, montagem e instalação de computadores pessoais (com foco em sustentabilidade e doação).","Formação dos grupos e escolha/adaptação do tema gerador com a turma."],"atividade":"Votação/definição em turma do tema gerador e formação dos grupos de trabalho."},
+    {"numero":2,"titulo":"Problematização — Detalhamento do Desafio","indicadores":[1],"conteudo":["Fase de problematização: detalhamento do tema gerador escolhido.","Levantamento do desafio real (ou caso fictício, quando não houver empresa/instituição real disponível)."],"atividade":"Cada grupo redige o detalhamento do desafio identificado e os objetivos do seu Projeto Integrador."},
+    {"numero":3,"titulo":"Desenvolvimento I — Plano de Ação","indicadores":[1],"conteudo":["Fase de desenvolvimento: elaboração das estratégias para atingir os objetivos.","Planejamento das etapas de montagem/captação/instalação conforme o tema escolhido."],"atividade":"Elaboração do plano de ação do grupo, com etapas, responsáveis e prazos."},
+    {"numero":4,"titulo":"Desenvolvimento II — Execução Prática","indicadores":[1],"conteudo":["Execução prática do plano de ação: montagem, instalação e configuração dos computadores conforme o tema gerador."],"atividade":"Trabalho prático em grupo na execução do projeto (montagem/instalação/configuração)."},
+    {"numero":5,"titulo":"Desenvolvimento III — Testes Cruzados e Relatório","indicadores":[1,2],"conteudo":["Testes de hardware/software executados por outro grupo (simulando prática de mercado).","Elaboração do relatório das ações realizadas para subsidiar o aprimoramento do trabalho."],"atividade":"Troca de projetos entre grupos para teste cruzado, com elaboração do relatório de resultados."},
+    {"numero":6,"titulo":"Síntese — Apresentação dos Resultados e Avaliação","indicadores":[1,2],"conteudo":["Fase de síntese: organização e avaliação das atividades desenvolvidas e dos resultados obtidos.","Apresentação dos resultados à turma e, quando possível, à comunidade escolar."],"atividade":"Apresentação final de cada grupo, com avaliação dos indicadores do Projeto Integrador."}
+  ]
+}

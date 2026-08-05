@@ -1,0 +1,38 @@
+{
+  "uc_code": "UC3",
+  "uc_title": "Planejar e executar a manutenção de computadores",
+  "carga_horaria_horas": 72,
+  "qualificacao": "Assistente de Suporte e Manutenção de Computadores",
+  "indicadores": [
+    "Planeja e organiza a utilização dos recursos conforme as necessidades da demanda do cliente e o ambiente de trabalho.",
+    "Realiza as etapas do processo de segurança e restauração (backup e restore) dos dados do computador conforme normas, procedimentos técnicos e legislação vigente.",
+    "Verifica o funcionamento do hardware, utilizando ferramentas e técnicas para diagnóstico de falhas, de acordo com as recomendações das normas técnicas dos fabricantes.",
+    "Verifica o funcionamento do software, utilizando técnicas para diagnóstico de falhas, de acordo com as recomendações dos fabricantes.",
+    "Verifica e corrige problemas físicos, lógicos e de conectividade de acordo com as recomendações dos fabricantes.",
+    "Instala os pacotes de atualização do sistema operacional corrigindo falhas, assegurando o desempenho do computador e a segurança de acordo com as recomendações técnicas.",
+    "Testa o funcionamento do computador, dos periféricos e a conectividade da rede por meio de instrumentos e softwares específicos conforme as recomendações técnicas de cada fabricante."
+  ],
+  "aulas": [
+    {"numero":1,"titulo":"Apresentação da UC3 e Planilha Eletrônica","indicadores":[1],"conteudo":["Apresentação da UC3: competências, indicadores e critério de aprovação.","Planilha eletrônica: funcionalidades, atalhos e aplicações."],"atividade":"Elaboração de uma planilha simples de controle de chamados de manutenção."},
+    {"numero":2,"titulo":"Planejamento de Recursos para Manutenção","indicadores":[1],"conteudo":["Planejamento e organização da utilização de recursos conforme a demanda do cliente e o ambiente de trabalho."],"atividade":"Estudo de caso: organizar os recursos para atender três chamados de manutenção simultâneos."},
+    {"numero":3,"titulo":"Manuais de Fabricantes de Manutenção","indicadores":[1],"conteudo":["Manuais de fabricantes de hardware e software: informações técnicas, requisitos, compatibilidades, melhores práticas."],"atividade":"Consulta a um manual técnico real para diagnosticar um problema hipotético."},
+    {"numero":4,"titulo":"Backup e Restore — Conceitos e Ferramentas","indicadores":[2],"conteudo":["Ferramentas de backup e restore.","Normas, procedimentos técnicos e legislação vigente."],"atividade":"Comparativo entre diferentes ferramentas de backup (local, em nuvem, imagem de disco)."},
+    {"numero":5,"titulo":"Backup e Restore — Prática Guiada","indicadores":[2],"conteudo":["Execução do processo completo de backup e restauração de dados."],"atividade":"Prática supervisionada: realizar backup de uma estação e restaurar os dados em outra."},
+    {"numero":6,"titulo":"Técnicas de Diagnóstico de Hardware","indicadores":[3],"conteudo":["Ferramentas de diagnóstico. Teste de componentes.","Programas e dispositivos de detecção de erros."],"atividade":"Uso de um software de diagnóstico de hardware para identificar componentes com falha."},
+    {"numero":7,"titulo":"Diagnóstico de Hardware — Prática","indicadores":[3],"conteudo":["Aplicação prática das técnicas de diagnóstico em um computador com falha simulada."],"atividade":"Estudo de caso prático: diagnosticar e relatar a causa de uma falha de hardware simulada."},
+    {"numero":8,"titulo":"Técnicas de Diagnóstico de Software","indicadores":[4],"conteudo":["Ferramentas de diagnóstico de software. Teste de compatibilidade.","Teste de funcionalidade de sistemas operacionais, aplicativos e drivers."],"atividade":"Uso de ferramentas de diagnóstico para identificar conflitos de software."},
+    {"numero":9,"titulo":"Diagnóstico de Software — Prática","indicadores":[4],"conteudo":["Configurações de sistemas operacionais e aplicativos relacionadas a falhas comuns."],"atividade":"Estudo de caso prático: diagnosticar e corrigir uma falha de software simulada."},
+    {"numero":10,"titulo":"Conectividade — Testes e Normas","indicadores":[5],"conteudo":["Testes de conectividade. Protocolos. Normas, padrões e especificações técnicas de fabricantes."],"atividade":"Prática de testes de conectividade de rede com ferramentas de diagnóstico (ping, traceroute)."},
+    {"numero":11,"titulo":"Diagnóstico de Problemas de Conectividade","indicadores":[5],"conteudo":["Identificação de problemas de conectividade física e lógica."],"atividade":"Estudo de caso: diagnosticar por que uma estação perdeu conectividade de rede."},
+    {"numero":12,"titulo":"Correção de Problemas Físicos e Lógicos","indicadores":[5],"conteudo":["Verificação e correção de problemas físicos, lógicos e de conectividade."],"atividade":"Prática supervisionada de correção de um problema físico e um lógico em bancada."},
+    {"numero":13,"titulo":"Atualizações de Hardware e Periféricos","indicadores":[6],"conteudo":["Atualizações de hardware — computadores e periféricos."],"atividade":"Levantamento de itens de hardware que precisam de atualização numa estação de bancada."},
+    {"numero":14,"titulo":"Atualização de SO, Drivers e Firmware","indicadores":[6],"conteudo":["Atualização de sistemas operacionais, drivers, firmware e aplicativos utilitários corrigindo falhas."],"atividade":"Prática de atualização de SO/drivers assegurando desempenho e segurança do equipamento."},
+    {"numero":15,"titulo":"Recuperação a Desastres e Imagem de Sistema","indicadores":[2,6],"conteudo":["Ferramentas de recuperação a desastres e imagem de sistemas."],"atividade":"Criação de uma imagem de sistema e simulação de recuperação após falha."},
+    {"numero":16,"titulo":"Aterramento e Proteção Eletrostática na Manutenção","indicadores":[3],"conteudo":["Equipamentos de medição. Aterramentos. Cuidados e prevenção contra danos físicos durante a manutenção."],"atividade":"Prática de manuseio seguro de componentes durante um reparo, com uso de pulseira ESD."},
+    {"numero":17,"titulo":"Correção de Falhas no Sistema de Arquivos","indicadores":[4,6],"conteudo":["Correção de falhas no sistema de arquivos. Configuração das diretivas de segurança."],"atividade":"Prática de diagnóstico e correção de erros no sistema de arquivos de um disco."},
+    {"numero":18,"titulo":"Sustentabilidade e Descarte de Resíduos Tecnológicos","indicadores":[1],"conteudo":["Legislação ambiental vigente. Descarte de resíduos tecnológicos."],"atividade":"Elaboração de um plano de descarte responsável de peças substituídas em manutenções."},
+    {"numero":19,"titulo":"Normas Técnicas de Segurança do Trabalho","indicadores":[1],"conteudo":["Ergonomia. Riscos visuais. Lesões por esforços repetitivos."],"atividade":"Checklist de segurança ergonômica para uma bancada de manutenção."},
+    {"numero":20,"titulo":"Homologação e Teste Final de Funcionamento","indicadores":[7],"conteudo":["Plano de testes. Tipos de testes: físicos e funcionais. Registro e documentação."],"atividade":"Execução de um plano de testes completo após uma manutenção simulada, com registro dos resultados."},
+    {"numero":21,"titulo":"Revisão Geral e Avaliação da UC3","indicadores":[1,2,3,4,5,6,7],"conteudo":["Revisão dos principais tópicos da UC3.","Avaliação prática final: diagnóstico e manutenção supervisionada."],"atividade":"Avaliação prática + questionário de revisão; lançamento dos indicadores (A/PA/NA) por aluno."}
+  ]
+}
