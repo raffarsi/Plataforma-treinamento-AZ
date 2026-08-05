@@ -1,0 +1,88 @@
+{
+  "uc_code": "UC8",
+  "uc_title": "Projeto Integrador — Assistente de Operação de Redes de Computadores",
+  "carga_horaria_horas": 20,
+  "qualificacao": "Assistente de Operação de Redes de Computadores",
+  "is_projeto_integrador": true,
+  "indicadores": [
+    "Cumpre as atividades previstas no plano de ação, conforme desafio identificado no tema gerador.",
+    "Apresenta resultados ou soluções de acordo com as problemáticas do tema gerador e objetivos do Projeto Integrador."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação do Projeto Integrador e Escolha do Tema Gerador",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Objetivos e indicadores de avaliação do Projeto Integrador (UCPI).",
+        "Proposta 1: instalação e configuração de uma rede local cliente/servidor para uma organização.",
+        "Proposta 2: estudo, instalação, cabeamento e configuração de uma rede local para escola, instituição de caridade ou órgão público com déficit de estrutura.",
+        "Formação dos grupos e escolha/adaptação do tema gerador com a turma."
+      ],
+      "atividade": "Votação/definição em turma do tema gerador e formação dos grupos de trabalho."
+    },
+    {
+      "numero": 2,
+      "titulo": "Problematização — Detalhamento do Desafio",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Fase de problematização: detalhamento do tema gerador escolhido.",
+        "Visita técnica (real ou simulada) à instituição/organização para levantamento dos desafios."
+      ],
+      "atividade": "Cada grupo redige o detalhamento do desafio identificado e os objetivos do seu Projeto Integrador."
+    },
+    {
+      "numero": 3,
+      "titulo": "Desenvolvimento I — Estudo e Plano de Ação",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Fase de desenvolvimento: elaboração das estratégias para atingir os objetivos.",
+        "Elaboração do estudo em ferramentas de simulação de redes."
+      ],
+      "atividade": "Simulação da topologia de rede proposta em ferramenta de simulação de redes."
+    },
+    {
+      "numero": 4,
+      "titulo": "Desenvolvimento II — Execução Prática",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Execução prática do plano de ação: cabeamento, montagem e configuração da rede local cliente/servidor conforme o tema gerador."
+      ],
+      "atividade": "Trabalho prático em grupo na execução do projeto (cabeamento/instalação/configuração)."
+    },
+    {
+      "numero": 5,
+      "titulo": "Desenvolvimento III — Testes Cruzados e Relatório",
+      "indicadores": [
+        1,
+        2
+      ],
+      "conteudo": [
+        "Testes de hardware e software executados por outro grupo (simulando prática de mercado).",
+        "Elaboração do relatório das ações realizadas para subsidiar o aprimoramento e a manutenção da rede instalada."
+      ],
+      "atividade": "Troca de projetos entre grupos para teste cruzado, com elaboração do relatório de resultados."
+    },
+    {
+      "numero": 6,
+      "titulo": "Síntese — Apresentação dos Resultados e Avaliação",
+      "indicadores": [
+        1,
+        2
+      ],
+      "conteudo": [
+        "Fase de síntese: organização e avaliação das atividades desenvolvidas e dos resultados obtidos.",
+        "Apresentação dos resultados à turma e, quando possível, à instituição/comunidade escolar."
+      ],
+      "atividade": "Apresentação final de cada grupo, com avaliação dos indicadores do Projeto Integrador."
+    }
+  ]
+}

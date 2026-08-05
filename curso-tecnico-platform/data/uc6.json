@@ -1,0 +1,336 @@
+{
+  "uc_code": "UC6",
+  "uc_title": "Planejar e executar a manutenção de redes locais de computadores",
+  "carga_horaria_horas": 96,
+  "qualificacao": "Assistente de Operação de Redes de Computadores",
+  "indicadores": [
+    "Realiza diagnóstico de funcionalidade da rede local conforme recomendações técnicas de software de monitoramento.",
+    "Substitui os componentes de rede local, conforme o diagnóstico realizado e as recomendações técnicas dos fabricantes.",
+    "Repara cabeamento de redes locais conforme as recomendações técnicas dos fabricantes.",
+    "Testa e realiza correções na rede local de computadores para assegurar seu funcionamento."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação da UC6 e Manuais de Fabricantes de Equipamentos de Redes",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Apresentação da UC6: competências, indicadores e critério de aprovação.",
+        "Manuais de fabricantes de equipamentos de redes: informações técnicas, requisitos, compatibilidades."
+      ],
+      "atividade": "Consulta a um manual técnico real de equipamento de rede para um caso hipotético de manutenção."
+    },
+    {
+      "numero": 2,
+      "titulo": "Fundamentos de Segurança da Rede — Gestão de Ativos",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Fundamentos de segurança da rede: tipos.",
+        "Gestão de ativos da informação."
+      ],
+      "atividade": "Elaboração de um inventário simples de ativos de rede de um laboratório fictício."
+    },
+    {
+      "numero": 3,
+      "titulo": "Gestão de Incidentes de Segurança",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Gestão de incidentes de segurança.",
+        "Riscos de integridade, disponibilidade e autenticidade dos sistemas computacionais."
+      ],
+      "atividade": "Estudo de caso: classificar um incidente de segurança simulado e propor resposta."
+    },
+    {
+      "numero": 4,
+      "titulo": "Legislação da Segurança da Informação",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Legislação da Segurança da Informação: direitos e deveres. Sanções."
+      ],
+      "atividade": "Debate sobre um caso real de violação de segurança da informação e suas consequências legais."
+    },
+    {
+      "numero": 5,
+      "titulo": "Normas ISO de Segurança da Informação",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Normas ISO de segurança da informação."
+      ],
+      "atividade": "Pesquisa sobre a norma ISO 27001 e apresentação dos principais controles."
+    },
+    {
+      "numero": 6,
+      "titulo": "Ferramentas de Monitoramento de Segurança — Antivírus e Anti-malware",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Ferramentas de monitoramento de segurança de redes locais: antivírus de rede local, anti-malware."
+      ],
+      "atividade": "Configuração prática de um antivírus de rede numa estação de laboratório."
+    },
+    {
+      "numero": 7,
+      "titulo": "Ferramentas de Monitoramento de Segurança — Firewall e Sniffer",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Ferramentas de monitoramento: firewall, sniffer."
+      ],
+      "atividade": "Uso de um sniffer de rede para observar tráfego numa rede de testes."
+    },
+    {
+      "numero": 8,
+      "titulo": "Ferramentas de Monitoramento de Segurança — Exploits, Port Scanner e Honeypot",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Ferramentas de monitoramento: exploits, port scanner e honeypot."
+      ],
+      "atividade": "Demonstração guiada de um port scanner numa rede de testes controlada."
+    },
+    {
+      "numero": 9,
+      "titulo": "Monitoramento de Tráfego de Redes Locais",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Monitoramento de tráfego de redes locais: desempenho, segurança, integridade, disponibilidade e autenticidade dos dados."
+      ],
+      "atividade": "Análise de um relatório de tráfego de rede e identificação de padrões anômalos."
+    },
+    {
+      "numero": 10,
+      "titulo": "Diagnóstico de Funcionalidade da Rede — Prática (parte 1)",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Uso de software de monitoramento para diagnóstico de funcionalidade da rede."
+      ],
+      "atividade": "Prática guiada de diagnóstico de rede usando uma ferramenta de monitoramento."
+    },
+    {
+      "numero": 11,
+      "titulo": "Diagnóstico de Funcionalidade da Rede — Prática (parte 2)",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Consolidação do diagnóstico de funcionalidade da rede conforme recomendações técnicas."
+      ],
+      "atividade": "Estudo de caso completo: diagnosticar uma rede com múltiplos problemas simulados."
+    },
+    {
+      "numero": 12,
+      "titulo": "Infraestrutura de Redes Locais — Anomalias",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Infraestrutura de redes locais: anomalias. Normas e métodos de resolução de problemas."
+      ],
+      "atividade": "Levantamento de anomalias comuns em infraestrutura de rede e seus métodos de resolução."
+    },
+    {
+      "numero": 13,
+      "titulo": "Substituição de Componentes de Rede — Procedimentos",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Substituição de componentes de rede local conforme recomendações técnicas dos fabricantes."
+      ],
+      "atividade": "Elaboração de um procedimento passo a passo para substituição de um switch defeituoso."
+    },
+    {
+      "numero": 14,
+      "titulo": "Substituição de Componentes de Rede — Prática Guiada",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Execução prática da substituição de um componente de rede."
+      ],
+      "atividade": "Prática supervisionada de substituição de um componente de rede em bancada."
+    },
+    {
+      "numero": 15,
+      "titulo": "Manutenção de Cabeamento — Tipos e Procedimentos",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Manutenção de cabeamento: tipos e procedimentos. Normas técnicas."
+      ],
+      "atividade": "Identificação de defeitos comuns em cabeamento de rede (rompimento, mau contato)."
+    },
+    {
+      "numero": 16,
+      "titulo": "Reparo de Cabeamento — Normas e Manuais",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Normas técnicas e manuais de fabricantes para reparo de cabeamento."
+      ],
+      "atividade": "Consulta a manual técnico para planejar o reparo de um trecho de cabeamento danificado."
+    },
+    {
+      "numero": 17,
+      "titulo": "Reparo de Cabeamento — Prática Guiada",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Execução prática do reparo de cabeamento de redes locais."
+      ],
+      "atividade": "Prática supervisionada de reparo/recrimpagem de um cabo de rede danificado."
+    },
+    {
+      "numero": 18,
+      "titulo": "Equipamentos de Proteção Eletrostática na Manutenção de Redes",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Normas técnicas de operação para reparo e manutenção: equipamentos de proteção eletrostática."
+      ],
+      "atividade": "Prática de manuseio seguro de equipamentos de rede com proteção eletrostática."
+    },
+    {
+      "numero": 19,
+      "titulo": "Cuidados e Prevenção Contra Danos Físicos",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Cuidados e prevenção contra danos físicos em equipamentos de rede durante manutenção."
+      ],
+      "atividade": "Elaboração de um checklist de cuidados físicos para manutenção de equipamentos de rede."
+    },
+    {
+      "numero": 20,
+      "titulo": "Homologação do Funcionamento da Rede Local",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Homologação do funcionamento da rede local: plano de testes."
+      ],
+      "atividade": "Elaboração de um plano de testes de homologação após uma manutenção de rede."
+    },
+    {
+      "numero": 21,
+      "titulo": "Tipos de Testes e Instrumentos de Teste de Rede",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Tipos de testes. Instrumentos e software de testes de rede."
+      ],
+      "atividade": "Uso prático de instrumentos de teste de rede (certificador de cabo, testador de continuidade)."
+    },
+    {
+      "numero": 22,
+      "titulo": "Teste e Correção do Funcionamento da Rede — Prática (parte 1)",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Execução de testes e correções na rede local de computadores."
+      ],
+      "atividade": "Prática supervisionada de teste e correção de uma rede local com falha simulada."
+    },
+    {
+      "numero": 23,
+      "titulo": "Teste e Correção do Funcionamento da Rede — Prática (parte 2)",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Consolidação das correções realizadas, assegurando o funcionamento pleno da rede."
+      ],
+      "atividade": "Estudo de caso completo de teste e correção de rede com múltiplos pontos de falha."
+    },
+    {
+      "numero": 24,
+      "titulo": "Registro e Documentação de Manutenção de Redes",
+      "indicadores": [
+        1,
+        4
+      ],
+      "conteudo": [
+        "Registro e documentação dos processos de homologação e manutenção."
+      ],
+      "atividade": "Elaboração de um relatório completo de manutenção seguindo o padrão de documentação discutido."
+    },
+    {
+      "numero": 25,
+      "titulo": "Sustentabilidade e Descarte de Resíduos Tecnológicos",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Sustentabilidade: legislação ambiental. Descarte de resíduos tecnológicos."
+      ],
+      "atividade": "Elaboração de um plano de descarte responsável de componentes de rede substituídos."
+    },
+    {
+      "numero": 26,
+      "titulo": "Normas Técnicas de Segurança do Trabalho",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Normas técnicas de segurança do trabalho: ergonomia. Riscos visuais. Lesões de esforços repetitivos."
+      ],
+      "atividade": "Checklist de segurança ergonômica para uma bancada de manutenção de redes."
+    },
+    {
+      "numero": 27,
+      "titulo": "Simulado Prático Integrado de Manutenção de Redes",
+      "indicadores": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "conteudo": [
+        "Simulação completa: diagnóstico, substituição de componentes, reparo de cabeamento e teste final."
+      ],
+      "atividade": "Projeto prático integrado: diagnosticar, reparar e testar uma rede local com múltiplas falhas simuladas, em grupo."
+    },
+    {
+      "numero": 28,
+      "titulo": "Revisão Geral e Avaliação da UC6",
+      "indicadores": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "conteudo": [
+        "Revisão dos principais tópicos da UC6.",
+        "Avaliação prática final: manutenção de rede local supervisionada."
+      ],
+      "atividade": "Avaliação prática + questionário de revisão; lançamento dos indicadores (A/PA/NA) por aluno."
+    }
+  ]
+}

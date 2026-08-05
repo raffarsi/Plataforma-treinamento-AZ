@@ -1,0 +1,333 @@
+{
+  "uc_code": "UC7",
+  "uc_title": "Planejar e executar a instalação, a configuração e o monitoramento de sistemas operacionais de redes locais (servidores)",
+  "carga_horaria_horas": 96,
+  "qualificacao": "Assistente de Operação de Redes de Computadores",
+  "indicadores": [
+    "Elabora plano trabalho de instalação e configuração do equipamento de gerenciamento da rede local (servidor), conforme as necessidades do cliente e de acordo com as recomendações de fabricantes.",
+    "Instala equipamento de gerenciamento da rede local (servidor) de acordo com as normas e procedimentos técnicos.",
+    "Instala sistema operacional de rede local (servidor) de acordo com as normas e procedimentos técnicos.",
+    "Configura os serviços de gerenciamento da rede local (servidor) de acordo com o planejamento e as recomendações de fabricantes.",
+    "Realiza o monitoramento de redes com software de segurança e gera relatórios de atividades na rede conforme recomendações técnicas.",
+    "Configura máquinas virtuais por meio de ferramentas de virtualização de acordo com as normas e procedimentos técnicos."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação da UC7 e Plano de Trabalho de Instalação de Servidor",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Apresentação da UC7: competências, indicadores e critério de aprovação.",
+        "Elaboração de plano de trabalho de instalação e configuração do servidor conforme necessidades do cliente."
+      ],
+      "atividade": "Elaboração de um plano de trabalho para instalação de um servidor num cenário fictício."
+    },
+    {
+      "numero": 2,
+      "titulo": "Sistemas Livres e Proprietários para Servidor (parte 1)",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Instalação e configuração de sistemas livres e proprietários para servidor de rede local."
+      ],
+      "atividade": "Comparativo entre um sistema operacional de servidor livre e um proprietário."
+    },
+    {
+      "numero": 3,
+      "titulo": "Instalação de Sistema Operacional de Servidor — Prática (parte 1)",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Procedimento de instalação de sistema operacional de rede local (servidor)."
+      ],
+      "atividade": "Prática guiada de instalação de um sistema operacional de servidor em máquina virtual/bancada."
+    },
+    {
+      "numero": 4,
+      "titulo": "Instalação de Sistema Operacional de Servidor — Prática (parte 2)",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Configurações iniciais pós-instalação do sistema operacional de servidor."
+      ],
+      "atividade": "Configuração inicial supervisionada do servidor instalado na aula anterior."
+    },
+    {
+      "numero": 5,
+      "titulo": "Instalação Física do Equipamento de Gerenciamento de Rede",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Instalação do equipamento de gerenciamento da rede local (servidor) de acordo com normas e procedimentos técnicos."
+      ],
+      "atividade": "Prática de instalação física (rack, cabeamento, energia) de um equipamento servidor."
+    },
+    {
+      "numero": 6,
+      "titulo": "Configuração de Serviços de Redes Locais — Visão Geral",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Configuração de serviços de redes locais. Controle de recursos de rede. Protocolos."
+      ],
+      "atividade": "Mapeamento dos principais serviços de rede que um servidor pode oferecer."
+    },
+    {
+      "numero": 7,
+      "titulo": "Controle de Recursos de Rede e Protocolos de Serviços",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Serviços de redes locais - servidor. Controles de tráfego."
+      ],
+      "atividade": "Configuração prática de controle básico de tráfego no servidor."
+    },
+    {
+      "numero": 8,
+      "titulo": "Serviços de Redes Locais — Servidor de Arquivos",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Configuração de serviço de compartilhamento de arquivos no servidor."
+      ],
+      "atividade": "Prática de configuração de um servidor de arquivos e permissões de acesso."
+    },
+    {
+      "numero": 9,
+      "titulo": "Serviços de Redes Locais — Servidor de Impressão",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Configuração de serviço de compartilhamento de impressão no servidor."
+      ],
+      "atividade": "Prática de configuração de um servidor de impressão compartilhada."
+    },
+    {
+      "numero": 10,
+      "titulo": "Serviços de Redes Locais — Servidor DHCP",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Configuração de serviço DHCP para atribuição automática de endereços IP."
+      ],
+      "atividade": "Prática de configuração de um servidor DHCP numa rede de laboratório."
+    },
+    {
+      "numero": 11,
+      "titulo": "Serviços de Redes Locais — Servidor DNS",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Configuração de serviço DNS para resolução de nomes na rede."
+      ],
+      "atividade": "Prática de configuração de um servidor DNS básico numa rede de laboratório."
+    },
+    {
+      "numero": 12,
+      "titulo": "Controles de Tráfego e Políticas de Administração",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Controles de tráfego. Políticas de administração de sistemas de comunicação de dados."
+      ],
+      "atividade": "Elaboração de uma política de administração de tráfego para o servidor configurado."
+    },
+    {
+      "numero": 13,
+      "titulo": "Administração de Sistemas de Comunicação de Dados",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Administração de sistemas de comunicação de dados no ambiente de servidor."
+      ],
+      "atividade": "Prática de administração centralizada de usuários e permissões no servidor."
+    },
+    {
+      "numero": 14,
+      "titulo": "Políticas de Segurança de Rede — Padrões e Normas",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Políticas de segurança de rede. Padrões e normas de segurança."
+      ],
+      "atividade": "Elaboração de uma política de segurança de rede para o ambiente de servidor."
+    },
+    {
+      "numero": 15,
+      "titulo": "Portas de Comunicação e Protocolos",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Portas de comunicação e protocolos de rede e internet."
+      ],
+      "atividade": "Mapeamento das principais portas e protocolos utilizados pelos serviços configurados."
+    },
+    {
+      "numero": 16,
+      "titulo": "Políticas de Backup e Recuperação de Arquivos",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Políticas de backup, normas de segurança e recuperação de arquivos no servidor."
+      ],
+      "atividade": "Configuração prática de uma rotina de backup automatizada no servidor."
+    },
+    {
+      "numero": 17,
+      "titulo": "Configuração dos Serviços de Gerenciamento — Prática Integrada",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Integração de todos os serviços configurados (arquivos, impressão, DHCP, DNS, backup)."
+      ],
+      "atividade": "Configuração prática integrada de um servidor completo com múltiplos serviços ativos."
+    },
+    {
+      "numero": 18,
+      "titulo": "Interoperabilidade — Software Livre x Proprietário",
+      "indicadores": [
+        3,
+        4
+      ],
+      "conteudo": [
+        "Gerenciamento de interoperabilidade de servidores com software livre e software proprietário."
+      ],
+      "atividade": "Estudo de caso de integração entre um servidor livre e um ambiente proprietário."
+    },
+    {
+      "numero": 19,
+      "titulo": "Modelos de Interoperabilidade e Arquitetura de Rede",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Modelos de interoperabilidade. Tipos de arquitetura de rede."
+      ],
+      "atividade": "Comparativo entre arquiteturas de rede cliente/servidor e ponto a ponto."
+    },
+    {
+      "numero": 20,
+      "titulo": "Virtualização — Conceitos e Máquinas Virtuais",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Virtualização: máquinas virtuais, sistemas operacionais."
+      ],
+      "atividade": "Instalação de uma ferramenta de virtualização e criação de uma máquina virtual básica."
+    },
+    {
+      "numero": 21,
+      "titulo": "Virtualização — Interfaces de Rede, Switches e Roteadores Virtuais",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Interfaces de rede virtuais. Switches e roteadores virtuais."
+      ],
+      "atividade": "Configuração prática de uma rede virtual entre duas máquinas virtuais."
+    },
+    {
+      "numero": 22,
+      "titulo": "Firewalls Virtuais e Tipos de Virtualização",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Firewalls virtuais. Tipos de virtualização: hardware, apresentação e aplicativos."
+      ],
+      "atividade": "Configuração prática de um firewall virtual numa máquina virtual."
+    },
+    {
+      "numero": 23,
+      "titulo": "Computação em Nuvem (Cloud Computing)",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Computação na nuvem (cloud computing): conceitos e aplicações."
+      ],
+      "atividade": "Exploração de um serviço de nuvem gratuito para provisionar uma máquina virtual."
+    },
+    {
+      "numero": 24,
+      "titulo": "Configuração de Máquinas Virtuais — Prática (parte 1)",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Ferramentas de virtualização: softwares, equipamentos, acessórios, periféricos e programas."
+      ],
+      "atividade": "Prática guiada de configuração de máquina virtual com recursos de rede."
+    },
+    {
+      "numero": 25,
+      "titulo": "Configuração de Máquinas Virtuais — Prática (parte 2)",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Consolidação da configuração de máquinas virtuais conforme normas e procedimentos técnicos."
+      ],
+      "atividade": "Projeto prático: configurar um pequeno ambiente virtualizado com servidor e cliente."
+    },
+    {
+      "numero": 26,
+      "titulo": "Monitoramento de Redes com Software de Segurança",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Monitoramento de redes com software de segurança."
+      ],
+      "atividade": "Instalação e configuração de um software de monitoramento de segurança no servidor."
+    },
+    {
+      "numero": 27,
+      "titulo": "Geração de Relatórios e Tecnologias de Redes Emergentes",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Geração de relatórios de atividades na rede.",
+        "Tecnologias de redes emergentes: tipos e aplicações."
+      ],
+      "atividade": "Geração e análise de um relatório de atividades da rede monitorada."
+    },
+    {
+      "numero": 28,
+      "titulo": "Revisão Geral e Avaliação da UC7",
+      "indicadores": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "conteudo": [
+        "Revisão dos principais tópicos da UC7.",
+        "Avaliação prática final: instalação, configuração e monitoramento de servidor supervisionados."
+      ],
+      "atividade": "Avaliação prática + questionário de revisão; lançamento dos indicadores (A/PA/NA) por aluno."
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "uc_code": "UC5",
+  "uc_title": "Planejar e executar a instalação de redes locais de computadores",
+  "carga_horaria_horas": 96,
+  "qualificacao": "Assistente de Operação de Redes de Computadores",
+  "indicadores": [
+    "Planeja redes locais conforme as condições do ambiente.",
+    "Interpreta requisitos pré-estabelecidos de acordo com projetos de rede.",
+    "Instala fisicamente redes locais de acordo com as normas e os padrões dos fabricantes.",
+    "Configura equipamentos de redes locais de computadores, de acordo com projeto ou documentação pré-definida.",
+    "Configura a segurança da rede local de acordo com a política de segurança da organização.",
+    "Testa e realiza correções no funcionamento dos equipamentos de redes locais utilizando ferramentas de diagnóstico de redes específicas conforme recomendação técnica.",
+    "Instala e configura as ferramentas de monitoramento de redes conforme as especificações dos fabricantes.",
+    "Realiza as etapas do processo de instalação de redes locais de computadores de acordo com as normas e os procedimentos técnicos."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação da UC5 e Eletricidade Aplicada a Redes",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Apresentação da UC5: competências, indicadores e critério de aprovação.",
+        "Eletricidade aplicada a redes: conceitos, aterramento e riscos elétricos."
+      ],
+      "atividade": "Roda de discussão sobre riscos elétricos em instalações de rede + checklist de segurança."
+    },
+    {
+      "numero": 2,
+      "titulo": "Equipamentos de Medição em Redes",
+      "indicadores": [
+        1,
+        6
+      ],
+      "conteudo": [
+        "Equipamentos de medição aplicados a redes.",
+        "Testadores de cabo e ferramentas de diagnóstico básico."
+      ],
+      "atividade": "Prática de uso de testador de cabo de rede em bancada."
+    },
+    {
+      "numero": 3,
+      "titulo": "Sistema Operacional para Redes Locais",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Instalação de sistema operacional para configuração de redes locais."
+      ],
+      "atividade": "Prática de instalação/configuração básica de rede num sistema operacional."
+    },
+    {
+      "numero": 4,
+      "titulo": "Compartilhamento de Pastas e Recursos Periféricos",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Compartilhamento de pastas em rede.",
+        "Recursos periféricos compartilhados (impressoras, discos de rede)."
+      ],
+      "atividade": "Configuração prática de uma pasta compartilhada e uma impressora de rede."
+    },
+    {
+      "numero": 5,
+      "titulo": "Arquiteturas de Redes — Topologias",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Conceitos de arquitetura de redes.",
+        "Topologias de rede: estrela, barramento, anel, malha."
+      ],
+      "atividade": "Diagrama comparativo das topologias de rede e seus casos de uso."
+    },
+    {
+      "numero": 6,
+      "titulo": "Protocolos de Comunicação — Modelo ISO/OSI",
+      "indicadores": [
+        1,
+        2
+      ],
+      "conteudo": [
+        "Características e funções do modelo ISO/OSI.",
+        "Camadas do modelo OSI."
+      ],
+      "atividade": "Mapa das 7 camadas OSI relacionando cada uma a um exemplo prático."
+    },
+    {
+      "numero": 7,
+      "titulo": "Protocolos de Comunicação — Modelo TCP/IP",
+      "indicadores": [
+        1,
+        2
+      ],
+      "conteudo": [
+        "Características e funções do modelo TCP/IP.",
+        "Comparação entre os modelos OSI e TCP/IP."
+      ],
+      "atividade": "Exercício de mapeamento entre camadas OSI e TCP/IP."
+    },
+    {
+      "numero": 8,
+      "titulo": "Endereçamento IP e Máscaras de Sub-rede (parte 1)",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Teoria geral de redes.",
+        "Máscaras de endereços IP: conceitos."
+      ],
+      "atividade": "Exercícios teóricos de identificação de classes de endereço IP."
+    },
+    {
+      "numero": 9,
+      "titulo": "Endereçamento IP e Máscaras de Sub-rede (parte 2)",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Cálculo prático de sub-redes e máscaras."
+      ],
+      "atividade": "Exercícios práticos de cálculo de sub-redes para um cenário de rede dado."
+    },
+    {
+      "numero": 10,
+      "titulo": "Comportamento dos Dados no Cabeamento Lógico",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Atenuação, colisão e ruídos no comportamento dos dados em cabeamento lógico."
+      ],
+      "atividade": "Estudo de caso: identificar possíveis causas de degradação de sinal numa rede cabeada."
+    },
+    {
+      "numero": 11,
+      "titulo": "Planejamento de Redes — Conceitos e Tipos",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Planejamento de redes: conceito e tipos.",
+        "Análise de cenários e necessidade do cliente."
+      ],
+      "atividade": "Levantamento de requisitos de um cliente fictício para planejamento de rede."
+    },
+    {
+      "numero": 12,
+      "titulo": "Projeto de Topologia de Rede LAN",
+      "indicadores": [
+        1,
+        2
+      ],
+      "conteudo": [
+        "Projeto da topologia de rede na tecnologia LAN.",
+        "Etapas de projeto de rede local. Equipamentos e mobiliários de redes."
+      ],
+      "atividade": "Elaboração de um projeto de topologia LAN para o cenário levantado na aula anterior."
+    },
+    {
+      "numero": 13,
+      "titulo": "Elaboração de Soluções de Rede e Conectividade",
+      "indicadores": [
+        1,
+        2
+      ],
+      "conteudo": [
+        "Custos/benefícios. Gerenciamento de projetos. Especificações técnicas.",
+        "Elaboração de soluções de rede e conectividade."
+      ],
+      "atividade": "Apresentação da proposta de solução de rede com estimativa de custos e especificações."
+    },
+    {
+      "numero": 14,
+      "titulo": "Cabeamento — Conceitos e Tipos",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Conceitos de cabeamento. Tipos de cabos para redes locais."
+      ],
+      "atividade": "Identificação prática de tipos de cabos de rede (par trançado, fibra) e seus conectores."
+    },
+    {
+      "numero": 15,
+      "titulo": "Crimpagem de Cabeamento — Normas Técnicas",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Normas técnicas de crimpagem de cabeamento. Manuais de fabricantes."
+      ],
+      "atividade": "Demonstração guiada da técnica de crimpagem de cabo de rede (padrão T568A/B)."
+    },
+    {
+      "numero": 16,
+      "titulo": "Crimpagem de Cabeamento — Prática Guiada",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Execução prática da crimpagem de cabos de rede."
+      ],
+      "atividade": "Prática individual de crimpagem de cabo de rede com teste de continuidade."
+    },
+    {
+      "numero": 17,
+      "titulo": "Instalação Física de Redes Locais",
+      "indicadores": [
+        3,
+        8
+      ],
+      "conteudo": [
+        "Instalação física de redes locais de acordo com normas e padrões dos fabricantes."
+      ],
+      "atividade": "Prática de instalação física de uma pequena rede local em laboratório."
+    },
+    {
+      "numero": 18,
+      "titulo": "Configuração de Redes Locais — Terminal de Comandos (parte 1)",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Terminal de comandos: manipulação de arquivos, diretórios, permissões, usuários, senhas, data/hora do sistema."
+      ],
+      "atividade": "Prática de comandos de terminal para configuração básica de rede."
+    },
+    {
+      "numero": 19,
+      "titulo": "Configuração de Redes Locais — Terminal de Comandos (parte 2)",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Configurações, informações e teste de conectividade na rede via terminal.",
+        "Compactação e descompactação de arquivos."
+      ],
+      "atividade": "Prática de testes de conectividade via terminal (ping, ipconfig/ifconfig)."
+    },
+    {
+      "numero": 20,
+      "titulo": "Configuração de Equipamentos de Rede",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Configuração de equipamentos de redes locais de computadores de acordo com projeto ou documentação pré-definida."
+      ],
+      "atividade": "Configuração prática de um switch/roteador conforme documentação de projeto."
+    },
+    {
+      "numero": 21,
+      "titulo": "Redes e Sub-redes Lógicas com TCP/IP",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Redes e sub-redes lógicas, utilizando TCP/IP."
+      ],
+      "atividade": "Configuração prática de endereçamento IP e sub-redes em uma rede de laboratório."
+    },
+    {
+      "numero": 22,
+      "titulo": "Diagnóstico de Falhas de Conectividade",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Diagnósticos: eventuais falhas de conectividade, infraestrutura e correção."
+      ],
+      "atividade": "Estudo de caso: diagnosticar e corrigir uma falha de conectividade simulada na rede."
+    },
+    {
+      "numero": 23,
+      "titulo": "Segurança de Redes — Conceitos e Ameaças",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Segurança de redes: conceito, tipos e principais características.",
+        "Ameaças digitais: softwares maliciosos e técnicas de ataque."
+      ],
+      "atividade": "Pesquisa e apresentação sobre um tipo de ameaça digital a redes locais."
+    },
+    {
+      "numero": 24,
+      "titulo": "Ferramentas de Segurança — Firewall e Antivírus",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Ferramentas de segurança: firewall, antivírus e outras ferramentas de proteção a redes locais."
+      ],
+      "atividade": "Configuração prática de um firewall básico numa rede de laboratório."
+    },
+    {
+      "numero": 25,
+      "titulo": "Configuração da Segurança da Rede Local",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Planejamento e implementação de segurança em uma rede local.",
+        "Aplicação de políticas de segurança da organização."
+      ],
+      "atividade": "Elaboração e aplicação de uma política de segurança básica para a rede do laboratório."
+    },
+    {
+      "numero": 26,
+      "titulo": "Ferramentas de Monitoramento de Redes",
+      "indicadores": [
+        7
+      ],
+      "conteudo": [
+        "Instalação e configuração de ferramentas de monitoramento de redes conforme especificações dos fabricantes."
+      ],
+      "atividade": "Instalação prática de uma ferramenta de monitoramento de rede e configuração de alertas básicos."
+    },
+    {
+      "numero": 27,
+      "titulo": "Processo Completo de Instalação de Rede Local — Prática Integrada",
+      "indicadores": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "conteudo": [
+        "Execução de todas as etapas do processo de instalação de rede local, do planejamento ao monitoramento."
+      ],
+      "atividade": "Projeto prático integrado: planejar, cabear, instalar, configurar, proteger e monitorar uma rede local completa, em grupo."
+    },
+    {
+      "numero": 28,
+      "titulo": "Revisão Geral e Avaliação da UC5",
+      "indicadores": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "conteudo": [
+        "Revisão dos principais tópicos da UC5.",
+        "Avaliação prática final: instalação de rede local supervisionada."
+      ],
+      "atividade": "Avaliação prática + questionário de revisão; lançamento dos indicadores (A/PA/NA) por aluno."
+    }
+  ]
+}
