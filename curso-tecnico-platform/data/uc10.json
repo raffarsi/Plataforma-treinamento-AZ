@@ -1,0 +1,252 @@
+{
+  "uc_code": "UC10",
+  "uc_title": "Desenvolver Banco de Dados",
+  "carga_horaria_horas": 72,
+  "qualificacao": "Assistente de Desenvolvimento de Aplicativos Computacionais",
+  "indicadores": [
+    "Constrói diagramas de dados aferindo a modelagem e estrutura do banco de dados, de acordo com as especificações técnicas.",
+    "Realiza a instalação e configuração de sistema gerenciador de banco de dados (SGBD), de acordo com especificações técnicas.",
+    "Elabora scripts SQL de construção, inserção e manipulação dos dados conforme especificação técnica da linguagem SQL.",
+    "Realiza importação e exportação de dados, conforme regras do sistema gerenciador de banco de dados (SGBD).",
+    "Planeja rotinas de backup e restore da base de dados, conforme especificações técnicas do sistema gerenciador de banco de dados (SGBD)."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação da UC10 e Modelagem Conceitual",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Apresentação da UC10: competências, indicadores e critério de aprovação.",
+        "Modelagem conceitual do banco de dados: levantamento de dados e especificação de requisitos. Dicionário de dados."
+      ],
+      "atividade": "Levantamento de requisitos e elaboração de um dicionário de dados para um sistema fictício."
+    },
+    {
+      "numero": 2,
+      "titulo": "Modelo Entidade-Relacionamento — Entidades e Atributos",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Modelo de entidade e relacionamento: entidade, visão, atributos, índices."
+      ],
+      "atividade": "Elaboração de um diagrama entidade-relacionamento (DER) básico para o cenário levantado."
+    },
+    {
+      "numero": 3,
+      "titulo": "Chaves e Integridade Referencial",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Chave candidata, chave primária e chave estrangeira. Relacionamentos e integridade referencial."
+      ],
+      "atividade": "Identificação de chaves primárias e estrangeiras no DER elaborado."
+    },
+    {
+      "numero": 4,
+      "titulo": "Normalização de Banco de Dados",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Normalização: 1ª, 2ª e 3ª forma normal. Arquitetura de arquivos de dados."
+      ],
+      "atividade": "Aplicação das formas normais em uma tabela não normalizada dada pelo docente."
+    },
+    {
+      "numero": 5,
+      "titulo": "Teoria dos Conjuntos e Tipos de Dados",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Teoria dos conjuntos. Tipos de dados aplicados à modelagem de banco de dados."
+      ],
+      "atividade": "Exercícios de definição de tipos de dados para os atributos do modelo criado."
+    },
+    {
+      "numero": 6,
+      "titulo": "Instalação do Sistema Gerenciador de Banco de Dados (SGBD)",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Instalação de sistema gerenciador de banco de dados (SGBD)."
+      ],
+      "atividade": "Prática guiada de instalação de um SGBD relacional."
+    },
+    {
+      "numero": 7,
+      "titulo": "Configuração Inicial do SGBD",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Configuração de sistema gerenciador de banco de dados (SGBD) conforme especificações técnicas."
+      ],
+      "atividade": "Configuração inicial do SGBD: criação de usuário administrador e de um banco de dados de testes."
+    },
+    {
+      "numero": 8,
+      "titulo": "Linguagem SQL — Histórico e Criação de Tabelas (DDL)",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Linguagem SQL: histórico, definições e aplicabilidade. Ferramentas de modelagem e manutenção."
+      ],
+      "atividade": "Criação das tabelas do modelo conceitual utilizando comandos DDL (CREATE TABLE)."
+    },
+    {
+      "numero": 9,
+      "titulo": "Manipulação de Dados — INSERT, UPDATE, DELETE",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Manipulação de dados em SQL: inserção, atualização e remoção de registros."
+      ],
+      "atividade": "Prática de inserção, atualização e remoção de registros nas tabelas criadas."
+    },
+    {
+      "numero": 10,
+      "titulo": "Consultas SQL — SELECT, WHERE e ORDER BY",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Criação, manipulação, ordenação e listagens em consultas SQL."
+      ],
+      "atividade": "Elaboração de consultas SQL com filtros e ordenação sobre os dados inseridos."
+    },
+    {
+      "numero": 11,
+      "titulo": "Junção de Dados (JOIN)",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "União, intersecção e junção de dados."
+      ],
+      "atividade": "Elaboração de consultas SQL com junção (JOIN) entre múltiplas tabelas relacionadas."
+    },
+    {
+      "numero": 12,
+      "titulo": "Subconsultas SQL",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Subconsultas SQL."
+      ],
+      "atividade": "Elaboração de consultas SQL utilizando subconsultas para resolver um problema proposto."
+    },
+    {
+      "numero": 13,
+      "titulo": "Funções de Agregação e Agrupamento",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Operações em consultas SQL: funções de agregação e agrupamento de dados."
+      ],
+      "atividade": "Elaboração de consultas SQL com funções de agregação (SUM, COUNT, AVG) e GROUP BY."
+    },
+    {
+      "numero": 14,
+      "titulo": "Views — Criação e Uso",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Views: entidade, atributos, índices e relacionamentos aplicados a views."
+      ],
+      "atividade": "Criação e consulta de views a partir das tabelas do projeto."
+    },
+    {
+      "numero": 15,
+      "titulo": "Manipulação de Datas em SQL",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Manipulação de datas em consultas SQL."
+      ],
+      "atividade": "Elaboração de consultas SQL envolvendo cálculos e filtros de datas."
+    },
+    {
+      "numero": 16,
+      "titulo": "Importação de Dados no SGBD",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Importação de dados conforme regras do SGBD."
+      ],
+      "atividade": "Prática de importação de um arquivo de dados externo (CSV) para o banco de dados."
+    },
+    {
+      "numero": 17,
+      "titulo": "Exportação de Dados do SGBD",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Exportação de dados conforme regras do SGBD."
+      ],
+      "atividade": "Prática de exportação dos dados do banco de dados para um arquivo externo."
+    },
+    {
+      "numero": 18,
+      "titulo": "Segurança do Banco de Dados — Controle de Acesso",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Segurança do banco de dados: normas, controle de acesso, autenticação. Falhas e ameaças."
+      ],
+      "atividade": "Configuração de permissões e controle de acesso para diferentes perfis de usuário no SGBD."
+    },
+    {
+      "numero": 19,
+      "titulo": "Segurança do Banco de Dados — Criptografia e Consistência",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Redundância, concorrência, integridade e consistência. Criptografia."
+      ],
+      "atividade": "Discussão de um estudo de caso sobre falha de integridade e proposta de solução."
+    },
+    {
+      "numero": 20,
+      "titulo": "Rotinas de Backup do Banco de Dados",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Planejamento de rotinas de backup da base de dados."
+      ],
+      "atividade": "Configuração prática de uma rotina de backup do banco de dados criado."
+    },
+    {
+      "numero": 21,
+      "titulo": "Rotinas de Restore, Projeto Integrado e Revisão da UC10",
+      "indicadores": [
+        5,
+        1,
+        2,
+        3,
+        4
+      ],
+      "conteudo": [
+        "Rotinas de restore e testes de recuperação da base de dados.",
+        "Revisão dos principais tópicos da UC10."
+      ],
+      "atividade": "Teste prático de restore + avaliação final (projeto de banco de dados completo); lançamento dos indicadores (A/PA/NA) por aluno."
+    }
+  ]
+}

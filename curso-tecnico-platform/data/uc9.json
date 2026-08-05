@@ -1,0 +1,374 @@
+{
+  "uc_code": "UC9",
+  "uc_title": "Desenvolver Algoritmos",
+  "carga_horaria_horas": 108,
+  "qualificacao": "Assistente de Desenvolvimento de Aplicativos Computacionais",
+  "indicadores": [
+    "Planeja o desenvolvimento de software de acordo com as características do projeto e regras de negócio.",
+    "Desenvolve algoritmo de acordo com as melhores práticas de programação.",
+    "Desenvolve algoritmos computacionais de acordo com as premissas da linguagem selecionada.",
+    "Testa algoritmos computacionais de acordo com as orientações técnicas da linguagem selecionada.",
+    "Valida a estrutura de dados conforme os resultados dos testes dos algoritmos."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação da UC9 e Regras de Negócio",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Apresentação da UC9: competências, indicadores e critério de aprovação.",
+        "Regras de negócio: conceitos, características, tipos, requisitos funcionais e não funcionais."
+      ],
+      "atividade": "Levantamento das regras de negócio de um sistema fictício simples proposto pelo docente."
+    },
+    {
+      "numero": 2,
+      "titulo": "Plataformas de Desenvolvimento",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Plataformas de desenvolvimento: conceitos, tipos, características e especificações técnicas."
+      ],
+      "atividade": "Comparativo entre diferentes plataformas de desenvolvimento disponíveis no mercado."
+    },
+    {
+      "numero": 3,
+      "titulo": "Metodologias de Desenvolvimento de Software — Tradicionais",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Introdução a metodologias de desenvolvimento de software: conceito e tipos.",
+        "Metodologias tradicionais. Metodologia interativa: RUP."
+      ],
+      "atividade": "Mapeamento das fases de uma metodologia tradicional aplicada a um projeto fictício."
+    },
+    {
+      "numero": 4,
+      "titulo": "Metodologias Ágeis — XP, SCRUM e FDD",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Metodologias ágeis: XP, SCRUM, FDD, entre outras."
+      ],
+      "atividade": "Simulação de uma cerimônia SCRUM (planning) para um projeto de exemplo."
+    },
+    {
+      "numero": 5,
+      "titulo": "Lógica de Programação — Conceito de Algoritmo",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Conceito de algoritmo. Algoritmos naturais e estruturados."
+      ],
+      "atividade": "Elaboração de um algoritmo natural (em linguagem cotidiana) para uma tarefa do dia a dia."
+    },
+    {
+      "numero": 6,
+      "titulo": "Representações Visuais de Algoritmos",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Representações visuais de algoritmos: fluxogramas."
+      ],
+      "atividade": "Elaboração de um fluxograma para o algoritmo natural criado na aula anterior."
+    },
+    {
+      "numero": 7,
+      "titulo": "Português Estruturado e Linguagem Algorítmica",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Português estruturado ou linguagem algorítmica."
+      ],
+      "atividade": "Reescrita do algoritmo em português estruturado."
+    },
+    {
+      "numero": 8,
+      "titulo": "Comandos de Entrada e Saída de Dados",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Comandos de entrada, processamento e saída de dados."
+      ],
+      "atividade": "Prática de codificação de um algoritmo simples com entrada e saída de dados na linguagem selecionada."
+    },
+    {
+      "numero": 9,
+      "titulo": "Variáveis, Constantes e Tipos de Dados",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Variáveis e constantes. Tipos de dados primitivos."
+      ],
+      "atividade": "Exercícios de declaração e uso de variáveis e constantes na linguagem selecionada."
+    },
+    {
+      "numero": 10,
+      "titulo": "Expressões e Operadores Aritméticos",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Expressões e operadores aritméticos."
+      ],
+      "atividade": "Resolução de problemas matemáticos simples utilizando expressões aritméticas em código."
+    },
+    {
+      "numero": 11,
+      "titulo": "Operadores Relacionais e Lógicos",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Operadores relacionais e lógicos."
+      ],
+      "atividade": "Exercícios de construção de expressões lógicas e relacionais."
+    },
+    {
+      "numero": 12,
+      "titulo": "Teste de Mesa",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Teste de mesa: conceito e aplicação prática."
+      ],
+      "atividade": "Execução de teste de mesa em um algoritmo dado, registrando o valor das variáveis a cada passo."
+    },
+    {
+      "numero": 13,
+      "titulo": "Estrutura Condicional Simples",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Estrutura condicional simples (se-então)."
+      ],
+      "atividade": "Prática de codificação de algoritmos com estrutura condicional simples."
+    },
+    {
+      "numero": 14,
+      "titulo": "Estrutura Condicional Composta",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Estrutura condicional composta (se-então-senão)."
+      ],
+      "atividade": "Prática de codificação de algoritmos com estrutura condicional composta."
+    },
+    {
+      "numero": 15,
+      "titulo": "Estrutura Condicional Aninhada e Múltipla Escolha",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Estruturas condicionais aninhadas e de múltipla escolha (switch/case)."
+      ],
+      "atividade": "Exercício de codificação com condicionais aninhadas para um cenário de classificação de dados."
+    },
+    {
+      "numero": 16,
+      "titulo": "Estrutura de Repetição — Enquanto (While)",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Estrutura de repetição: comando enquanto (while)."
+      ],
+      "atividade": "Prática de codificação de laços de repetição com condição de parada no início."
+    },
+    {
+      "numero": 17,
+      "titulo": "Estrutura de Repetição — Para (For)",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Estrutura de repetição: comando para (for)."
+      ],
+      "atividade": "Prática de codificação de laços de repetição com contador definido."
+    },
+    {
+      "numero": 18,
+      "titulo": "Estrutura de Repetição — Repita-até (Do-While)",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Estrutura de repetição: comando repita-até (do-while)."
+      ],
+      "atividade": "Prática de codificação de laços de repetição com condição de parada no final."
+    },
+    {
+      "numero": 19,
+      "titulo": "Vetores — Conceitos e Declaração",
+      "indicadores": [
+        3,
+        5
+      ],
+      "conteudo": [
+        "Vetores: conceito, declaração e inicialização."
+      ],
+      "atividade": "Exercícios de declaração, preenchimento e leitura de vetores."
+    },
+    {
+      "numero": 20,
+      "titulo": "Vetores — Operações Práticas",
+      "indicadores": [
+        3,
+        5
+      ],
+      "conteudo": [
+        "Operações com vetores: busca, inserção e remoção de elementos."
+      ],
+      "atividade": "Prática de codificação de rotinas de busca e manipulação de elementos em um vetor."
+    },
+    {
+      "numero": 21,
+      "titulo": "Matrizes — Conceitos e Declaração",
+      "indicadores": [
+        3,
+        5
+      ],
+      "conteudo": [
+        "Matrizes: conceito, declaração e inicialização."
+      ],
+      "atividade": "Exercícios de declaração e preenchimento de matrizes bidimensionais."
+    },
+    {
+      "numero": 22,
+      "titulo": "Matrizes — Operações Práticas",
+      "indicadores": [
+        3,
+        5
+      ],
+      "conteudo": [
+        "Operações com matrizes: percurso, soma e busca de elementos."
+      ],
+      "atividade": "Prática de codificação de rotinas de manipulação de matrizes."
+    },
+    {
+      "numero": 23,
+      "titulo": "Algoritmo de Ordenação — Bolha (Bubble Sort)",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Algoritmos de ordenação simples: bolha (bubble sort)."
+      ],
+      "atividade": "Implementação prática do algoritmo de ordenação bolha em um vetor."
+    },
+    {
+      "numero": 24,
+      "titulo": "Algoritmos de Busca — Sequencial e Binária",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Algoritmos de busca: sequencial e binária."
+      ],
+      "atividade": "Implementação prática dos algoritmos de busca sequencial e binária."
+    },
+    {
+      "numero": 25,
+      "titulo": "Ferramentas de Teste de Algoritmos",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Ferramentas de teste de algoritmos conforme orientações técnicas da linguagem selecionada."
+      ],
+      "atividade": "Configuração de uma ferramenta/ambiente de testes para os algoritmos desenvolvidos."
+    },
+    {
+      "numero": 26,
+      "titulo": "Testes de Algoritmos — Prática Guiada",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Execução de testes em algoritmos computacionais."
+      ],
+      "atividade": "Elaboração e execução de casos de teste para os algoritmos das aulas anteriores."
+    },
+    {
+      "numero": 27,
+      "titulo": "Validação da Estrutura de Dados",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Validação da estrutura de dados conforme os resultados dos testes dos algoritmos."
+      ],
+      "atividade": "Análise dos resultados de teste e ajuste da estrutura de dados de um algoritmo com defeito proposital."
+    },
+    {
+      "numero": 28,
+      "titulo": "Boas Práticas de Programação",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Boas práticas de programação: legibilidade, nomenclatura, modularização."
+      ],
+      "atividade": "Refatoração de um algoritmo existente aplicando boas práticas de programação."
+    },
+    {
+      "numero": 29,
+      "titulo": "Projeto Prático Integrado — Parte 1",
+      "indicadores": [
+        1,
+        2,
+        3
+      ],
+      "conteudo": [
+        "Planejamento de um algoritmo completo utilizando vetores e/ou matrizes para resolver um problema de negócio."
+      ],
+      "atividade": "Início do desenvolvimento de um projeto prático integrado em grupo."
+    },
+    {
+      "numero": 30,
+      "titulo": "Projeto Prático Integrado — Parte 2",
+      "indicadores": [
+        3,
+        4,
+        5
+      ],
+      "conteudo": [
+        "Testes e validação da estrutura de dados do projeto prático integrado."
+      ],
+      "atividade": "Conclusão, teste e validação do projeto prático integrado em grupo."
+    },
+    {
+      "numero": 31,
+      "titulo": "Revisão Geral e Avaliação da UC9",
+      "indicadores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "conteudo": [
+        "Revisão dos principais tópicos da UC9.",
+        "Avaliação prática final: desenvolvimento de algoritmo completo supervisionado."
+      ],
+      "atividade": "Avaliação prática + questionário de revisão; lançamento dos indicadores (A/PA/NA) por aluno."
+    }
+  ]
+}

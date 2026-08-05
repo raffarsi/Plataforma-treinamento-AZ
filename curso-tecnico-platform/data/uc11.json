@@ -1,0 +1,223 @@
+{
+  "uc_code": "UC11",
+  "uc_title": "Executar Teste e Implantação de Aplicativos Computacionais",
+  "carga_horaria_horas": 60,
+  "qualificacao": "Assistente de Desenvolvimento de Aplicativos Computacionais",
+  "indicadores": [
+    "Implanta o aplicativo de teste de acordo com os requisitos técnicos da plataforma.",
+    "Realiza a parametrização do aplicativo conforme as necessidades do projeto.",
+    "Executa o roteiro de testes conforme os requisitos e as funcionalidades do projeto.",
+    "Utiliza ferramentas específicas de testes de acordo com as especificações técnicas da ferramenta.",
+    "Recomenda ajustes e melhorias para o aplicativo de acordo com a análise dos resultados dos testes.",
+    "Documenta os resultados de testes de acordo com orientação técnica da ferramenta."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação da UC11 e Conceitos de Teste de Software",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Apresentação da UC11: competências, indicadores e critério de aprovação.",
+        "Testes de software: conceitos, caso, defeito, falha, critério de aceitação, artefatos de testes."
+      ],
+      "atividade": "Discussão de exemplos reais de defeitos e falhas de software e suas consequências."
+    },
+    {
+      "numero": 2,
+      "titulo": "Teste Estático e Teste Dinâmico",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Teste estático e teste dinâmico."
+      ],
+      "atividade": "Exercício de revisão estática (leitura de código) para identificar problemas sem executar o programa."
+    },
+    {
+      "numero": 3,
+      "titulo": "Níveis de Teste — Unitário, Integração, Sistema e Aceitação",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Níveis de teste: unitário, sistema, integração e aceitação."
+      ],
+      "atividade": "Classificação de casos de teste dados conforme o nível de teste correspondente."
+    },
+    {
+      "numero": 4,
+      "titulo": "Tipos de Teste — Funcional, Regressão e Desempenho",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Tipos de teste: funcional, regressão e desempenho."
+      ],
+      "atividade": "Elaboração de casos de teste funcional para uma funcionalidade de um aplicativo dado."
+    },
+    {
+      "numero": 5,
+      "titulo": "Tipos de Teste — Smoke, Exploratório e Confirmação",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Tipos de teste: smoketest, exploratório e confirmação."
+      ],
+      "atividade": "Execução de um teste exploratório guiado em um aplicativo de exemplo."
+    },
+    {
+      "numero": 6,
+      "titulo": "Tipos de Teste — Estresse, Carga, Volume, Recuperação e Segurança",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Tipos de teste: estresse, carga, volume, recuperação, segurança. Manual e automatizado."
+      ],
+      "atividade": "Estudo de caso: escolher o tipo de teste adequado para diferentes cenários de risco de um sistema."
+    },
+    {
+      "numero": 7,
+      "titulo": "Técnicas de Modelagem de Teste — Caixa Branca",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Técnicas de modelagem de teste: caixa branca."
+      ],
+      "atividade": "Elaboração de casos de teste caixa branca a partir do código-fonte de uma função simples."
+    },
+    {
+      "numero": 8,
+      "titulo": "Técnicas de Modelagem de Teste — Caixa Preta",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Técnicas de modelagem de teste: caixa preta."
+      ],
+      "atividade": "Elaboração de casos de teste caixa preta a partir da especificação de uma funcionalidade."
+    },
+    {
+      "numero": 9,
+      "titulo": "Métodos de Teste — Step-by-Step e Pairwise",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Métodos de teste: step-by-step e pairwise."
+      ],
+      "atividade": "Elaboração de um roteiro de teste step-by-step para uma funcionalidade de cadastro."
+    },
+    {
+      "numero": 10,
+      "titulo": "Métodos de Teste — Classe de Equivalência e Valores Limite",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Métodos de teste: gráfico de causa e efeito, classe de equivalência e valores limites."
+      ],
+      "atividade": "Elaboração de casos de teste por classe de equivalência e valores limite para um campo de formulário."
+    },
+    {
+      "numero": 11,
+      "titulo": "Elaboração de Plano de Teste",
+      "indicadores": [
+        3,
+        6
+      ],
+      "conteudo": [
+        "Plano de teste: elaboração, especificações, tipos de teste a serem executados, registros de teste."
+      ],
+      "atividade": "Elaboração de um plano de teste completo para um módulo de um sistema fictício."
+    },
+    {
+      "numero": 12,
+      "titulo": "Ferramentas de Gestão de Defeitos — Mantis e TestLink",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Ferramentas de testes: Mantis, TestLink."
+      ],
+      "atividade": "Cadastro de um caso de teste e registro de um defeito numa ferramenta de gestão de testes."
+    },
+    {
+      "numero": 13,
+      "titulo": "Ferramentas de Automação de Teste — JUnit e Selenium",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Ferramentas de testes: JUnit, Selenium, entre outras."
+      ],
+      "atividade": "Prática guiada de criação de um teste automatizado simples com JUnit ou Selenium."
+    },
+    {
+      "numero": 14,
+      "titulo": "Implantação do Aplicativo de Teste",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Implantação do aplicativo de teste de acordo com os requisitos técnicos da plataforma."
+      ],
+      "atividade": "Prática de implantação de um aplicativo em um ambiente de teste (local ou servidor de testes)."
+    },
+    {
+      "numero": 15,
+      "titulo": "Parametrização do Aplicativo",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Parametrização do aplicativo conforme as necessidades do projeto."
+      ],
+      "atividade": "Configuração de parâmetros do aplicativo implantado conforme um roteiro de necessidades do projeto."
+    },
+    {
+      "numero": 16,
+      "titulo": "Execução do Roteiro de Testes — Prática Guiada",
+      "indicadores": [
+        3,
+        4
+      ],
+      "conteudo": [
+        "Estratégias de teste: preventiva e reativa. Execução do roteiro de testes."
+      ],
+      "atividade": "Execução do plano de teste elaborado anteriormente sobre o aplicativo implantado, registrando os resultados."
+    },
+    {
+      "numero": 17,
+      "titulo": "Gestão de Defeitos e Recomendação de Ajustes",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Gestão de defeitos: causas, ciclo de vida, consequência, regra 10 de Myers."
+      ],
+      "atividade": "Análise dos defeitos encontrados na execução dos testes e elaboração de recomendações de ajuste."
+    },
+    {
+      "numero": 18,
+      "titulo": "Documentação de Resultados e Revisão Geral da UC11",
+      "indicadores": [
+        6,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "conteudo": [
+        "Documentação dos resultados de testes de acordo com orientação técnica da ferramenta.",
+        "Revisão dos principais tópicos da UC11."
+      ],
+      "atividade": "Elaboração do relatório final de testes + avaliação prática; lançamento dos indicadores (A/PA/NA) por aluno."
+    }
+  ]
+}
