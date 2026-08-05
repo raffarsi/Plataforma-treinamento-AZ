@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Plano de Aula | Curso Técnico em Informática</title>
+<meta name="description" content="Plano de aula por Unidade Curricular — Curso Técnico em Informática, Senac. Uso do docente." />
+<style>
+  :root {
+    --color-primary: #0078D4;
+    --color-primary-dark: #005A9E;
+    --color-accent: #50E6A5;
+    --color-warning: #FFB900;
+    --bg-body: #F3F2F1;
+    --bg-surface: #FFFFFF;
+    --bg-surface-alt: #F7F9FB;
+    --bg-header: #FFFFFF;
+    --text-primary: #201F1E;
+    --text-secondary: #605E5C;
+    --border-color: #E1DFDD;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --radius: 8px;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg-body);
+    color: var(--text-primary);
+    font-family: "Segoe UI", "Segoe UI Web", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--color-primary); }
+  h1, h2, h3, h4 { font-weight: 600; margin-top: 0; }
+
+  header.page-header {
+    background: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.9rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: var(--shadow);
+  }
+  .brand { font-weight: 700; font-size: 1.1rem; color: var(--color-primary); }
+  .back-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.45rem 0.85rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-primary);
+    background: var(--bg-surface-alt);
+  }
+
+  main { max-width: 980px; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+
+  .docente-banner {
+    background: #FFF8E6;
+    border: 1px solid var(--color-warning);
+    border-radius: var(--radius);
+    padding: 0.85rem 1.1rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #6B5500;
+  }
+
+  .uc-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .uc-nav a {
+    text-decoration: none;
+    font-size: 0.78rem;
+    padding: 0.3rem 0.65rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: var(--text-secondary);
+    background: var(--bg-surface);
+  }
+  .uc-nav a.current {
+    background: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+  }
+
+  .uc-summary {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.75rem;
+  }
+  .uc-summary h1 { font-size: 1.5rem; }
+  .uc-summary .meta {
+    display: flex; flex-wrap: wrap; gap: 0.6rem;
+    margin: 0.75rem 0 1.25rem;
+  }
+  .badge {
+    background: var(--bg-surface-alt);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+  }
+  .badge strong { color: var(--text-primary); }
+
+  .indicadores-list { margin: 0; padding-left: 1.2rem; }
+  .indicadores-list li { margin-bottom: 0.4rem; font-size: 0.92rem; }
+
+  .index-jump {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.4rem;
+    margin-top: 1rem;
+  }
+  .index-jump a {
+    display: block;
+    font-size: 0.82rem;
+    text-decoration: none;
+    background: var(--bg-surface-alt);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 0.4rem 0.6rem;
+    color: var(--text-primary);
+  }
+  .index-jump a:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+  .aula-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.25rem 1.4rem;
+    margin-bottom: 1.1rem;
+    scroll-margin-top: 5.5rem;
+  }
+  .aula-card h2 {
+    font-size: 1.05rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  .aula-num {
+    color: #fff;
+    background: var(--color-primary);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    padding: 0.15rem 0.65rem;
+    font-weight: 700;
+  }
+  .aula-indicadores {
+    display: flex; gap: 0.35rem; flex-wrap: wrap; margin: 0.4rem 0 0.85rem;
+  }
+  .ind-badge {
+    font-size: 0.72rem;
+    background: #E9F5EE;
+    color: #1B7A43;
+    border-radius: 999px;
+    padding: 0.15rem 0.55rem;
+    border: 1px solid #BFE6CD;
+  }
+  .aula-card h4 {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-secondary);
+    margin: 0.9rem 0 0.4rem;
+  }
+  .aula-card ul { margin: 0; padding-left: 1.15rem; }
+  .aula-card li { font-size: 0.92rem; margin-bottom: 0.3rem; }
+  .atividade-box {
+    background: var(--bg-surface-alt);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 4px;
+    padding: 0.65rem 0.85rem;
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+  }
+
+  footer.page-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding: 2rem 1rem;
+  }
+
+  .loading-msg, .error-msg {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+  }
+  .error-msg { color: #B4232C; }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <span class="brand">💻 Curso Técnico em Informática — Plano de Aula</span>
+  <a class="back-link" href="../index.html">⬅️ Voltar ao portal</a>
+</header>
+
+<main>
+
+  <div class="docente-banner">
+    📋 <strong>Página de uso do docente.</strong> Conteúdo de planejamento de aula — ainda não vinculado à navegação pública do aluno. Baseado no Plano de Curso nº 297 (Habilitação Profissional Técnica em Informática, Senac São Paulo).
+  </div>
+
+  <nav class="uc-nav" id="uc-nav"></nav>
+
+  <div id="page-body">
+    <div class="loading-msg">Carregando plano de aula…</div>
+  </div>
+
+</main>
+
+<footer class="page-footer">
+  Curso Técnico em Informática — Plano de aula gerado a partir do Plano de Curso nº 297 (Senac São Paulo). Documento de apoio interno do docente.
+</footer>
+
+<script>
+const ALL_UCS = ["UC1","UC2","UC3","UC4","UC5","UC6","UC7","UC8","UC9","UC10","UC11","UC12","UC13","UC14","UC15","UC16"];
+
+function getUcParam() {
+  const params = new URLSearchParams(window.location.search);
+  const raw = (params.get("uc") || "1").toUpperCase();
+  return raw.startsWith("UC") ? raw : "UC" + raw;
+}
+
+function renderNav(currentUc) {
+  const nav = document.getElementById("uc-nav");
+  nav.innerHTML = ALL_UCS.map(code => {
+    const num = code.replace("UC", "");
+    const cls = code === currentUc ? ' class="current"' : "";
+    return `<a href="plano-de-aula.html?uc=${num}"${cls}>${code}</a>`;
+  }).join("\n");
+}
+
+function renderPage(cfg) {
+  const numAulas = cfg.aulas.length;
+  const faltasMax = Math.floor(numAulas * 0.25);
+  const freqBadge = cfg.is_projeto_integrador
+    ? `Critério de aprovação: <strong>apenas Menção D</strong> (não exige 75% de frequência)`
+    : `Frequência mínima: <strong>75%</strong> (até ${faltasMax} faltas nesta UC)`;
+
+  const indicadoresHtml = cfg.indicadores.map(ind => `<li>${ind}</li>`).join("\n");
+
+  const body = document.getElementById("page-body");
+  body.innerHTML = `
+    <div class="uc-summary">
+      <h1>${cfg.uc_code} — ${cfg.uc_title}</h1>
+      <div class="meta">
+        <span class="badge">Carga horária: <strong>${cfg.carga_horaria_horas} horas</strong></span>
+        <span class="badge">Duração da aula: <strong>3h30</strong></span>
+        <span class="badge">Total de aulas: <strong>${numAulas}</strong></span>
+        <span class="badge">${freqBadge}</span>
+        <span class="badge">Qualificação: <strong>${cfg.qualificacao}</strong></span>
+      </div>
+      <h3>Indicadores de avaliação da ${cfg.uc_code}</h3>
+      <ol class="indicadores-list">${indicadoresHtml}</ol>
+      <h3>Índice das aulas</h3>
+      <div class="index-jump" id="index-jump"></div>
+    </div>
+    <div id="aulas-container"></div>
+  `;
+
+  const container = document.getElementById("aulas-container");
+  const indexJump = document.getElementById("index-jump");
+
+  cfg.aulas.forEach(aula => {
+    const link = document.createElement("a");
+    link.href = "#aula-" + aula.numero;
+    link.textContent = "Aula " + aula.numero + " — " + aula.titulo;
+    indexJump.appendChild(link);
+
+    const card = document.createElement("div");
+    card.className = "aula-card";
+    card.id = "aula-" + aula.numero;
+
+    const indBadges = aula.indicadores.map(n => `<span class="ind-badge">Indicador ${n}</span>`).join("");
+    const conteudoItems = aula.conteudo.map(c => `<li>${c}</li>`).join("");
+
+    card.innerHTML = `
+      <h2><span class="aula-num">Aula ${aula.numero}</span> ${aula.titulo}</h2>
+      <div class="aula-indicadores">${indBadges}</div>
+      <h4>Conteúdo abordado</h4>
+      <ul>${conteudoItems}</ul>
+      <h4>Atividade sugerida</h4>
+      <div class="atividade-box">${aula.atividade}</div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+async function init() {
+  const ucParam = getUcParam();
+  renderNav(ucParam);
+  const num = ucParam.replace("UC", "");
+  try {
+    const res = await fetch(`data/uc${num}.json`);
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const cfg = await res.json();
+    document.title = `${cfg.uc_code} — Plano de Aula | Curso Técnico em Informática`;
+    renderPage(cfg);
+  } catch (err) {
+    document.getElementById("page-body").innerHTML =
+      `<div class="error-msg">Não foi possível carregar o plano de aula de ${ucParam}. (${err.message})<br>Verifique se o arquivo data/uc${num}.json já foi publicado.</div>`;
+  }
+}
+
+init();
+</script>
+
+</body>
+</html>
