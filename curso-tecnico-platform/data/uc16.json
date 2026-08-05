@@ -1,0 +1,131 @@
+{
+  "uc_code": "UC16",
+  "uc_title": "Projeto Integrador — Assistente de Desenvolvimento de Aplicativos Computacionais",
+  "carga_horaria_horas": 32,
+  "qualificacao": "Assistente de Desenvolvimento de Aplicativos Computacionais",
+  "is_projeto_integrador": true,
+  "indicadores": [
+    "Cumpre as atividades previstas no plano de ação, conforme desafio identificado no tema gerador.",
+    "Apresenta resultados ou soluções de acordo com as problemáticas do tema gerador e objetivos do Projeto Integrador."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação do Projeto Integrador e Escolha do Tema Gerador",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Objetivos e indicadores de avaliação do Projeto Integrador (UCPI).",
+        "Proposta 1: desenvolvimento de um software comercial utilizando a arquitetura cliente/servidor (ex.: módulo desktop de controle de estoque + módulo web de e-commerce integrados via webservice).",
+        "Proposta 2: desenvolvimento de uma aplicação que envie, assine, homologue e retorne notas fiscais eletrônicas com os órgãos estaduais competentes (Sefaz).",
+        "Formação dos grupos e escolha/adaptação do tema gerador com a turma."
+      ],
+      "atividade": "Votação/definição em turma do tema gerador e formação dos grupos de trabalho."
+    },
+    {
+      "numero": 2,
+      "titulo": "Problematização — Detalhamento do Desafio",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Fase de problematização: detalhamento do tema gerador escolhido.",
+        "Leitura e interpretação de manuais técnicos relacionados ao tema (ex.: manuais da Sefaz, documentação de webservices)."
+      ],
+      "atividade": "Cada grupo redige o detalhamento do desafio identificado e os objetivos do seu Projeto Integrador."
+    },
+    {
+      "numero": 3,
+      "titulo": "Desenvolvimento I — Planejamento e Arquitetura da Solução",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Fase de desenvolvimento: elaboração das estratégias para atingir os objetivos.",
+        "Planejamento da arquitetura da solução (módulos, integração, tecnologias)."
+      ],
+      "atividade": "Elaboração do documento de arquitetura da solução proposta pelo grupo."
+    },
+    {
+      "numero": 4,
+      "titulo": "Desenvolvimento II — Construção do Módulo Desktop/Cadastro",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Desenvolvimento do módulo desktop ou do software de cadastro necessário à transmissão dos dados."
+      ],
+      "atividade": "Trabalho prático em grupo na construção do módulo desktop/cadastro do projeto."
+    },
+    {
+      "numero": 5,
+      "titulo": "Desenvolvimento III — Construção do Módulo Web",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Desenvolvimento do módulo web (e-commerce ou aplicação de envio/homologação de nota fiscal)."
+      ],
+      "atividade": "Trabalho prático em grupo na construção do módulo web do projeto."
+    },
+    {
+      "numero": 6,
+      "titulo": "Desenvolvimento IV — Integração entre Módulos (Webservice)",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Integração dos módulos desktop e web via webservice, ou integração da aplicação com os serviços da Sefaz."
+      ],
+      "atividade": "Implementação da integração entre os módulos/sistemas do projeto."
+    },
+    {
+      "numero": 7,
+      "titulo": "Desenvolvimento V — Testes Cruzados entre Grupos",
+      "indicadores": [
+        1,
+        2
+      ],
+      "conteudo": [
+        "Testes realizados por outro grupo, simulando testers conectados em rede, conforme prática de mercado."
+      ],
+      "atividade": "Troca de projetos entre grupos para teste cruzado da solução desenvolvida."
+    },
+    {
+      "numero": 8,
+      "titulo": "Desenvolvimento VI — Ajustes e Relatório de Testes",
+      "indicadores": [
+        1,
+        2
+      ],
+      "conteudo": [
+        "Elaboração do relatório da ação realizada para subsidiar a equipe desenvolvedora no aprimoramento e na manutenção do software."
+      ],
+      "atividade": "Ajuste do sistema a partir dos apontamentos do teste cruzado e elaboração do relatório de resultados."
+    },
+    {
+      "numero": 9,
+      "titulo": "Síntese — Preparação da Apresentação Final",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Fase de síntese: organização e avaliação das atividades desenvolvidas e dos resultados obtidos."
+      ],
+      "atividade": "Preparação da apresentação final do projeto (demonstração funcional + documentação)."
+    },
+    {
+      "numero": 10,
+      "titulo": "Síntese — Apresentação dos Resultados e Avaliação",
+      "indicadores": [
+        1,
+        2
+      ],
+      "conteudo": [
+        "Apresentação dos resultados à turma e, quando possível, a convidados externos (mercado/comunidade)."
+      ],
+      "atividade": "Apresentação final de cada grupo, com avaliação dos indicadores do Projeto Integrador."
+    }
+  ]
+}

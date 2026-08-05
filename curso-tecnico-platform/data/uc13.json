@@ -1,0 +1,342 @@
+{
+  "uc_code": "UC13",
+  "uc_title": "Executar os Processos de Codificação, Manutenção e Documentação de Aplicativos Computacionais para Internet",
+  "carga_horaria_horas": 96,
+  "qualificacao": "Assistente de Desenvolvimento de Aplicativos Computacionais",
+  "indicadores": [
+    "Configura o ambiente de desenvolvimento conforme as funcionalidades e características do aplicativo computacional para WEB.",
+    "Desenvolve softwares de acordo com as melhores práticas da linguagem de programação selecionada.",
+    "Elabora código conforme as funcionalidades e características do aplicativo computacional para WEB.",
+    "Realiza a compilação e depuração do código de acordo com orientações técnicas da IDE utilizada.",
+    "Utiliza comandos de integração dos objetos de bancos de dados com o código construído para WEB de acordo com premissas do sistema operacional (servidor) de rede.",
+    "Elabora o manual do projeto de software desenvolvido conforme orientação técnica."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação da UC13 e Configuração do Ambiente de Desenvolvimento Web",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Apresentação da UC13: competências, indicadores e critério de aprovação.",
+        "Configuração do ambiente de desenvolvimento conforme as características do aplicativo web."
+      ],
+      "atividade": "Instalação e configuração de um ambiente de desenvolvimento web (IDE + servidor local)."
+    },
+    {
+      "numero": 2,
+      "titulo": "Ferramentas de Desenvolvimento para Internet",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Ferramentas de desenvolvimento de programas para internet. Ferramentas de desenvolvimento colaborativo e de modelagem de software."
+      ],
+      "atividade": "Exploração das ferramentas do ambiente de desenvolvimento web configurado."
+    },
+    {
+      "numero": 3,
+      "titulo": "Visão Geral da Linguagem Orientada a Objetos para Web",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Visão geral da linguagem de programação orientada a objetos. Plataforma de desenvolvimento: internet."
+      ],
+      "atividade": "Exercícios introdutórios de sintaxe da linguagem web selecionada."
+    },
+    {
+      "numero": 4,
+      "titulo": "Palavras Reservadas e API",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Palavras reservadas. Application Program Interface (API)."
+      ],
+      "atividade": "Exploração de uma API da linguagem selecionada em um exemplo prático."
+    },
+    {
+      "numero": 5,
+      "titulo": "Tipos de Dados, Variáveis e Constantes na Plataforma Web",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Tipos de dados. Variáveis e constantes."
+      ],
+      "atividade": "Prática de declaração de variáveis e constantes em um projeto web inicial."
+    },
+    {
+      "numero": 6,
+      "titulo": "Coleções — Lista, Conjunto e Mapa",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Coleções: lista, conjunto e mapa."
+      ],
+      "atividade": "Prática de manipulação de coleções em código web."
+    },
+    {
+      "numero": 7,
+      "titulo": "Operadores e Comandos Condicionais",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Operadores. Comandos condicionais."
+      ],
+      "atividade": "Exercícios de codificação com estruturas condicionais em contexto web."
+    },
+    {
+      "numero": 8,
+      "titulo": "Comandos de Repetição",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Comandos de repetição."
+      ],
+      "atividade": "Exercícios de codificação com laços de repetição para geração dinâmica de conteúdo web."
+    },
+    {
+      "numero": 9,
+      "titulo": "Objetos, Classes e Interfaces",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Objetos, classes, interfaces."
+      ],
+      "atividade": "Implementação de classes e interfaces para o backend do projeto web."
+    },
+    {
+      "numero": 10,
+      "titulo": "Atributos, Modificadores de Acesso, Métodos e Propriedades",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Atributos, modificadores de acesso, métodos e propriedades."
+      ],
+      "atividade": "Implementação de atributos e métodos com modificadores de acesso adequados."
+    },
+    {
+      "numero": 11,
+      "titulo": "Herança e Polimorfismo",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Herança e polimorfismo."
+      ],
+      "atividade": "Implementação de uma hierarquia de classes com herança e polimorfismo no projeto web."
+    },
+    {
+      "numero": 12,
+      "titulo": "Encapsulamento e Agregação",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Encapsulamento e agregação."
+      ],
+      "atividade": "Refatoração do projeto web aplicando encapsulamento e agregação."
+    },
+    {
+      "numero": 13,
+      "titulo": "Tratamento de Erros e Exceções",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Tratamento de erros e exceções. Defeitos e falhas."
+      ],
+      "atividade": "Implementação de tratamento de exceções em rotinas críticas do backend web."
+    },
+    {
+      "numero": 14,
+      "titulo": "Estrutura de Páginas e Componentes Web Dinâmicos",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Estrutura de páginas e componentes dinâmicos de uma aplicação web."
+      ],
+      "atividade": "Criação de uma página web dinâmica que consome dados do backend."
+    },
+    {
+      "numero": 15,
+      "titulo": "Formulários Web e Validação de Dados",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Formulários web e validação de dados no backend."
+      ],
+      "atividade": "Implementação de um formulário web com validação de dados no servidor."
+    },
+    {
+      "numero": 16,
+      "titulo": "Requisições e Respostas HTTP",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Requisições e respostas HTTP na aplicação web."
+      ],
+      "atividade": "Implementação de rotas que tratam requisições HTTP (GET/POST) e retornam respostas."
+    },
+    {
+      "numero": 17,
+      "titulo": "Roteamento e Navegação entre Páginas",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Roteamento e navegação entre páginas da aplicação web."
+      ],
+      "atividade": "Configuração de rotas de navegação entre as páginas do projeto web."
+    },
+    {
+      "numero": 18,
+      "titulo": "Conexão e Manipulação do Banco de Dados via Web",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Conexão e manipulação do banco de dados a partir do código web."
+      ],
+      "atividade": "Implementação da conexão do aplicativo web com o banco de dados criado na UC10."
+    },
+    {
+      "numero": 19,
+      "titulo": "Integração de Objetos de Banco de Dados — Prática",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Comandos de integração dos objetos de bancos de dados com o código construído para WEB."
+      ],
+      "atividade": "Implementação de operações de CRUD no aplicativo web via banco de dados."
+    },
+    {
+      "numero": 20,
+      "titulo": "Compilação e Depuração do Código Web",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Compilação e depuração do código de acordo com orientações técnicas da IDE utilizada."
+      ],
+      "atividade": "Prática de depuração de um trecho de código web com erro proposital."
+    },
+    {
+      "numero": 21,
+      "titulo": "Defeitos e Falhas em Aplicações Web",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Defeitos e falhas em programas de computador para web."
+      ],
+      "atividade": "Análise de logs de erro de uma aplicação web e correção dos defeitos identificados."
+    },
+    {
+      "numero": 22,
+      "titulo": "Controle de Versão de Software Web — Conceitos",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Controle de versão de software web: conceito."
+      ],
+      "atividade": "Configuração de um repositório de controle de versão para o projeto web."
+    },
+    {
+      "numero": 23,
+      "titulo": "Controle de Versão — Segurança e Configuração",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Controle de versão de software web: segurança da informação, instalação e configuração."
+      ],
+      "atividade": "Configuração de regras de acesso e proteção de branches no repositório do projeto."
+    },
+    {
+      "numero": 24,
+      "titulo": "Distribuição do Aplicativo Web",
+      "indicadores": [
+        3,
+        4
+      ],
+      "conteudo": [
+        "Distribuição do aplicativo web."
+      ],
+      "atividade": "Publicação (deploy) da aplicação web em um ambiente de testes/homologação."
+    },
+    {
+      "numero": 25,
+      "titulo": "Documentação de Programas de Computador",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Documentação de programas de computador."
+      ],
+      "atividade": "Elaboração da documentação técnica do código do projeto web."
+    },
+    {
+      "numero": 26,
+      "titulo": "Elaboração do Manual do Projeto de Software",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Elaboração do manual do projeto de software desenvolvido conforme orientação técnica."
+      ],
+      "atividade": "Redação do manual do projeto de software web desenvolvido pelo grupo."
+    },
+    {
+      "numero": 27,
+      "titulo": "Projeto Prático Integrado — Aplicativo Web Completo (Parte 1)",
+      "indicadores": [
+        1,
+        2,
+        3
+      ],
+      "conteudo": [
+        "Integração de todos os componentes desenvolvidos: frontend, backend e banco de dados."
+      ],
+      "atividade": "Desenvolvimento em grupo da versão integrada do aplicativo web (parte 1)."
+    },
+    {
+      "numero": 28,
+      "titulo": "Projeto Prático Integrado (Parte 2) e Revisão Geral da UC13",
+      "indicadores": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "conteudo": [
+        "Revisão dos principais tópicos da UC13."
+      ],
+      "atividade": "Conclusão e apresentação do aplicativo web completo; avaliação prática + lançamento dos indicadores (A/PA/NA) por aluno."
+    }
+  ]
+}

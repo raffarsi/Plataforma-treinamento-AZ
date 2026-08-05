@@ -1,0 +1,370 @@
+{
+  "uc_code": "UC15",
+  "uc_title": "Desenvolver e Organizar Elementos Estruturais de Sites",
+  "carga_horaria_horas": 108,
+  "qualificacao": "Assistente de Desenvolvimento de Aplicativos Computacionais",
+  "indicadores": [
+    "Desenvolve aplicação WEB utilizando técnicas de marcação (HTML) conforme requisitos de boas práticas da W3C.",
+    "Instala e utiliza ferramentas de gerenciamento de conteúdo — Content Management System (CMS) — nos servidores web de acordo com as recomendações técnicas de customização de websites.",
+    "Customiza sites utilizando ferramentas CMS de acordo com as necessidades do projeto.",
+    "Codifica scripts organizando os elementos estruturais de site de acordo com orientações técnicas da W3C.",
+    "Cria sites conforme os padrões de usabilidade, acessibilidade, responsividade e arquitetura da informação.",
+    "Utiliza frameworks para construção do site responsivo conforme orientações técnicas do framework utilizado.",
+    "Utiliza ferramentas para publicar website em servidores locais e remotos conforme orientações técnicas.",
+    "Elabora o manual de utilização do projeto de software web desenvolvido conforme a orientação técnica."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação da UC15 e HTML — Versões, Cabeçalho e Elementos Estruturais",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Apresentação da UC15: competências, indicadores e critério de aprovação.",
+        "HyperText Markup Language (HTML): versões. Cabeçalho. Elementos estruturais."
+      ],
+      "atividade": "Criação da estrutura básica de uma página HTML (cabeçalho, corpo e elementos estruturais)."
+    },
+    {
+      "numero": 2,
+      "titulo": "HTML — Textos, Listas e Formatação",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "HTML: textos e listas."
+      ],
+      "atividade": "Marcação de um texto com títulos, parágrafos e listas em HTML."
+    },
+    {
+      "numero": 3,
+      "titulo": "HTML — Conteúdo Embutido: Imagens e Multimídia",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Conteúdo embutido (imagens e multimídia)."
+      ],
+      "atividade": "Inserção de imagens, áudio e vídeo em uma página HTML."
+    },
+    {
+      "numero": 4,
+      "titulo": "HTML — Formulários",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Formulários HTML."
+      ],
+      "atividade": "Construção de um formulário HTML com diferentes tipos de campos."
+    },
+    {
+      "numero": 5,
+      "titulo": "HTML5 — Elementos Semânticos",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Elementos e a semântica do HTML5."
+      ],
+      "atividade": "Refatoração de uma página HTML para usar elementos semânticos do HTML5."
+    },
+    {
+      "numero": 6,
+      "titulo": "HTML — SEO e Acessibilidade",
+      "indicadores": [
+        1,
+        5
+      ],
+      "conteudo": [
+        "SEO. Acessibilidade."
+      ],
+      "atividade": "Aplicação de atributos de acessibilidade (alt, aria) e boas práticas básicas de SEO na página."
+    },
+    {
+      "numero": 7,
+      "titulo": "CSS — Versões e Tipos de Folhas de Estilo",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Cascading Style Sheets (CSS): versões. Tipos de folhas de estilo: interno e externo. Tipos de mídia."
+      ],
+      "atividade": "Aplicação de estilos CSS internos e externos na página HTML criada."
+    },
+    {
+      "numero": 8,
+      "titulo": "CSS — Seletores e Atributos",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Seletores e atributos: ID, classes, TAGs e composições."
+      ],
+      "atividade": "Prática de uso de diferentes tipos de seletores CSS."
+    },
+    {
+      "numero": 9,
+      "titulo": "CSS — Unidades de Medida, Div e Span",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Unidades de medidas. Div e span."
+      ],
+      "atividade": "Estruturação de uma página utilizando divs, spans e diferentes unidades de medida."
+    },
+    {
+      "numero": 10,
+      "titulo": "CSS — Modelo de Caixa (Box Model)",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Modelo de caixa."
+      ],
+      "atividade": "Exercícios práticos de margin, border, padding e content (box model)."
+    },
+    {
+      "numero": 11,
+      "titulo": "CSS — Flutuação e Posicionamento de Elementos",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Flutuação e posicionamento de elementos (position)."
+      ],
+      "atividade": "Construção de um leiaute utilizando float e position."
+    },
+    {
+      "numero": 12,
+      "titulo": "CSS — Leiaute Fixo e Elástico",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Leiaute fixo e elástico."
+      ],
+      "atividade": "Comparação prática entre leiaute fixo e leiaute elástico no mesmo conteúdo."
+    },
+    {
+      "numero": 13,
+      "titulo": "CSS3 — Compatibilidades e Novos Seletores",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "CSS3. Compatibilidades. Seletores."
+      ],
+      "atividade": "Aplicação de novos seletores e propriedades CSS3 na página do projeto."
+    },
+    {
+      "numero": 14,
+      "titulo": "CSS — Efeitos de Texto e Imagem",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Efeitos de texto e imagem."
+      ],
+      "atividade": "Aplicação de efeitos visuais (sombras, transições) em textos e imagens."
+    },
+    {
+      "numero": 15,
+      "titulo": "Introdução a JavaScript e jQuery",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Tema: JavaScript. jQuery."
+      ],
+      "atividade": "Exercícios introdutórios de manipulação do DOM com JavaScript/jQuery."
+    },
+    {
+      "numero": 16,
+      "titulo": "Efeitos Visuais com JavaScript/jQuery",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Efeitos visuais."
+      ],
+      "atividade": "Implementação de efeitos visuais interativos (mostrar/ocultar, animações) na página."
+    },
+    {
+      "numero": 17,
+      "titulo": "Validação de Formulários com JavaScript",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Validação de formulários."
+      ],
+      "atividade": "Implementação de validação de campos do formulário criado na aula 4."
+    },
+    {
+      "numero": 18,
+      "titulo": "Responsividade — Conceitos e Técnicas",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Responsividade: conceitos, técnicas e aplicabilidade."
+      ],
+      "atividade": "Análise comparativa de sites responsivos e não responsivos em diferentes tamanhos de tela."
+    },
+    {
+      "numero": 19,
+      "titulo": "Frameworks para Sites Responsivos",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Utilização de frameworks para construção de sites responsivos."
+      ],
+      "atividade": "Configuração inicial de um framework CSS responsivo no projeto."
+    },
+    {
+      "numero": 20,
+      "titulo": "Prática de Site Responsivo com Framework (Parte 1)",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Uso do framework: sistema de grid e componentes."
+      ],
+      "atividade": "Construção da estrutura de grid responsiva da página com o framework escolhido."
+    },
+    {
+      "numero": 21,
+      "titulo": "Prática de Site Responsivo com Framework (Parte 2)",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Uso do framework: componentes de navegação e formulários."
+      ],
+      "atividade": "Implementação de menu de navegação e formulário responsivos com o framework."
+    },
+    {
+      "numero": 22,
+      "titulo": "Web Standards — Padrões W3C e Boas Práticas",
+      "indicadores": [
+        1,
+        5
+      ],
+      "conteudo": [
+        "Web Standards: padrões sugeridos pela World Wide Web Consortium (W3C) e boas práticas."
+      ],
+      "atividade": "Validação da página do projeto em um validador W3C e correção de erros apontados."
+    },
+    {
+      "numero": 23,
+      "titulo": "Usabilidade — Conceito, Técnicas e Testes",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Usabilidade: conceito, técnicas e testes aplicados à interface de usuário."
+      ],
+      "atividade": "Aplicação de um teste de usabilidade simples (heurístico) no protótipo do site."
+    },
+    {
+      "numero": 24,
+      "titulo": "Content Management System (CMS) — Ferramentas e Requisitos",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Content Management System (CMS): ferramentas de CMS. Requisitos."
+      ],
+      "atividade": "Comparativo entre diferentes ferramentas de CMS disponíveis no mercado."
+    },
+    {
+      "numero": 25,
+      "titulo": "Instalação de CMS — Servidor Local e Banco de Dados",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Servidor local e banco de dados. Aplicação."
+      ],
+      "atividade": "Prática guiada de instalação de um CMS em servidor local."
+    },
+    {
+      "numero": 26,
+      "titulo": "Customização de Leiaute, CSS e Temas no CMS",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Usuários administrativos. Customização de leiaute, CSS e temas."
+      ],
+      "atividade": "Customização do tema e leiaute do CMS instalado conforme o projeto."
+    },
+    {
+      "numero": 27,
+      "titulo": "Plug-ins e Implantação de CMS",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Plug-ins, implantação de CMS."
+      ],
+      "atividade": "Instalação e configuração de plug-ins úteis para o site no CMS."
+    },
+    {
+      "numero": 28,
+      "titulo": "Publicação do Site/Blog via CMS",
+      "indicadores": [
+        3,
+        7
+      ],
+      "conteudo": [
+        "Publicação do site/blog."
+      ],
+      "atividade": "Publicação do site desenvolvido no CMS em um ambiente de testes."
+    },
+    {
+      "numero": 29,
+      "titulo": "Publicação de Website em Servidores Locais e Remotos",
+      "indicadores": [
+        7
+      ],
+      "conteudo": [
+        "Ferramentas para publicar website em servidores locais e remotos."
+      ],
+      "atividade": "Publicação (deploy) do site HTML/CSS/JS do projeto em um servidor remoto (hospedagem/GitHub Pages)."
+    },
+    {
+      "numero": 30,
+      "titulo": "Elaboração do Manual de Utilização do Projeto",
+      "indicadores": [
+        8
+      ],
+      "conteudo": [
+        "Elaboração do manual de utilização do projeto de software web desenvolvido conforme a orientação técnica."
+      ],
+      "atividade": "Redação do manual de utilização do site desenvolvido pelo grupo."
+    },
+    {
+      "numero": 31,
+      "titulo": "Projeto Prático Integrado e Revisão Geral da UC15",
+      "indicadores": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "conteudo": [
+        "Revisão dos principais tópicos da UC15."
+      ],
+      "atividade": "Apresentação do site completo (responsivo, publicado, com CMS quando aplicável, e manual); avaliação prática + lançamento dos indicadores (A/PA/NA) por aluno."
+    }
+  ]
+}

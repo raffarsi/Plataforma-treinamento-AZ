@@ -1,0 +1,342 @@
+{
+  "uc_code": "UC12",
+  "uc_title": "Executar os Processos de Codificação, Manutenção e Documentação de Aplicativos Computacionais para Desktop",
+  "carga_horaria_horas": 96,
+  "qualificacao": "Assistente de Desenvolvimento de Aplicativos Computacionais",
+  "indicadores": [
+    "Configura o ambiente de desenvolvimento conforme as funcionalidades e características do aplicativo computacional para desktop.",
+    "Desenvolve softwares de acordo com as melhores práticas da linguagem de programação selecionada.",
+    "Elabora código conforme as funcionalidades e características do aplicativo computacional para desktops.",
+    "Realiza a compilação e depuração do código desenvolvido de acordo com orientações técnicas da IDE utilizada.",
+    "Utiliza comandos de integração dos objetos de bancos de dados com o código construído para desktop de acordo com premissas do sistema operacional (servidor) de rede.",
+    "Elabora o manual de utilização do projeto de software desenvolvido conforme a orientação técnica."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação da UC12 e Configuração do Ambiente de Desenvolvimento",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Apresentação da UC12: competências, indicadores e critério de aprovação.",
+        "Configuração do ambiente de desenvolvimento (IDE) para aplicativos desktop."
+      ],
+      "atividade": "Instalação e configuração inicial de uma IDE de desenvolvimento desktop."
+    },
+    {
+      "numero": 2,
+      "titulo": "Ferramentas de Desenvolvimento e Modelagem de Software",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Ferramentas de desenvolvimento colaborativo. Ferramentas de modelagem de software."
+      ],
+      "atividade": "Exploração de uma ferramenta de modelagem de software (criação de um diagrama simples)."
+    },
+    {
+      "numero": 3,
+      "titulo": "Análise Orientada a Objetos — Definição do Projeto e Requisitos",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Análise de sistemas orientada a objetos: tipos de dados, definição do projeto de sistema, análise de requisitos."
+      ],
+      "atividade": "Levantamento de requisitos para um pequeno sistema desktop (ex.: cadastro de clientes)."
+    },
+    {
+      "numero": 4,
+      "titulo": "UML — Diagrama de Caso de Uso",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Definição de UML. Diagrama de caso de uso."
+      ],
+      "atividade": "Elaboração de um diagrama de caso de uso para o sistema levantado na aula anterior."
+    },
+    {
+      "numero": 5,
+      "titulo": "UML — Diagrama de Classe",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Diagrama de classe."
+      ],
+      "atividade": "Elaboração de um diagrama de classe para o sistema proposto."
+    },
+    {
+      "numero": 6,
+      "titulo": "Linguagem Orientada a Objetos — Conceitos e Palavras Reservadas",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Linguagem de programação orientada a objetos: conceitos e aplicações. Palavras reservadas. Application Program Interface (API)."
+      ],
+      "atividade": "Exercícios introdutórios de sintaxe na linguagem de programação selecionada."
+    },
+    {
+      "numero": 7,
+      "titulo": "Tipos de Dados, Variáveis e Constantes",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Plataforma de desenvolvimento: desktop. Tipos de dados. Variáveis e constantes."
+      ],
+      "atividade": "Prática de declaração de variáveis e constantes na linguagem selecionada."
+    },
+    {
+      "numero": 8,
+      "titulo": "Operadores, Condicionais e Repetição",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Operadores. Comandos condicionais. Comandos de repetição."
+      ],
+      "atividade": "Exercícios de codificação com estruturas condicionais e de repetição."
+    },
+    {
+      "numero": 9,
+      "titulo": "Coleções — Lista, Conjunto e Mapa",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Coleções: lista, conjunto e mapa."
+      ],
+      "atividade": "Prática de manipulação de coleções (listas, conjuntos e mapas) na linguagem selecionada."
+    },
+    {
+      "numero": 10,
+      "titulo": "Objetos, Classes, Atributos e Métodos",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Objetos, classes, atributos e métodos."
+      ],
+      "atividade": "Implementação de uma classe simples com atributos e métodos a partir do diagrama de classe elaborado."
+    },
+    {
+      "numero": 11,
+      "titulo": "Interfaces e Modificadores de Acesso",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Interfaces, modificadores de acesso e propriedades."
+      ],
+      "atividade": "Implementação de uma interface e aplicação de modificadores de acesso nas classes do projeto."
+    },
+    {
+      "numero": 12,
+      "titulo": "Herança e Polimorfismo",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Herança e polimorfismo."
+      ],
+      "atividade": "Implementação de uma hierarquia de classes com herança e polimorfismo."
+    },
+    {
+      "numero": 13,
+      "titulo": "Encapsulamento e Agregação",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Encapsulamento e agregação."
+      ],
+      "atividade": "Refatoração das classes do projeto aplicando encapsulamento e agregação."
+    },
+    {
+      "numero": 14,
+      "titulo": "Tratamento de Erros e Exceções",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Tratamento de erros e exceções. Defeitos e falhas em programas de computador."
+      ],
+      "atividade": "Implementação de tratamento de exceções em rotinas críticas do sistema."
+    },
+    {
+      "numero": 15,
+      "titulo": "Estrutura de Dados — Pilhas e Filas",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Estrutura de dados: pilhas e filas."
+      ],
+      "atividade": "Implementação de uma estrutura de pilha ou fila para um cenário do projeto."
+    },
+    {
+      "numero": 16,
+      "titulo": "Estrutura de Dados — Listas e Árvores",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Estrutura de dados: listas e árvores."
+      ],
+      "atividade": "Implementação de uma estrutura de lista encadeada simples."
+    },
+    {
+      "numero": 17,
+      "titulo": "Ordenação, Pesquisa de Dados e Recursividade",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Ordenação de dados. Pesquisa de dados. Recursividade."
+      ],
+      "atividade": "Implementação de uma rotina recursiva e de um algoritmo de ordenação/pesquisa."
+    },
+    {
+      "numero": 18,
+      "titulo": "Linguagem Orientada a Eventos — Formulários e Controles",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Linguagem de programação orientada a eventos: formulários. Uso de controles (eventos e propriedades)."
+      ],
+      "atividade": "Criação de um formulário desktop com controles básicos (botões, campos de texto)."
+    },
+    {
+      "numero": 19,
+      "titulo": "Módulos, Funções e Procedimentos",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Módulos, funções e procedimentos."
+      ],
+      "atividade": "Organização do código do projeto em módulos, funções e procedimentos reutilizáveis."
+    },
+    {
+      "numero": 20,
+      "titulo": "Vínculo do Formulário Principal e Elaboração de Listagens",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Vínculo do sistema com o formulário principal. Elaboração de listagens."
+      ],
+      "atividade": "Implementação da navegação entre o formulário principal e telas de listagem de dados."
+    },
+    {
+      "numero": 21,
+      "titulo": "Conexão e Manipulação do Banco de Dados no Desktop",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Conexão e manipulação do banco de dados a partir do código desktop."
+      ],
+      "atividade": "Implementação da conexão do aplicativo desktop com o banco de dados criado na UC10."
+    },
+    {
+      "numero": 22,
+      "titulo": "Integração de Objetos de Banco de Dados — Prática",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Comandos de integração dos objetos de bancos de dados com o código construído para desktop."
+      ],
+      "atividade": "Implementação de operações de CRUD (criar, ler, atualizar, excluir) no aplicativo desktop via banco de dados."
+    },
+    {
+      "numero": 23,
+      "titulo": "Compilação e Depuração do Código — Prática Guiada",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Compilação e depuração do código desenvolvido de acordo com orientações técnicas da IDE."
+      ],
+      "atividade": "Prática de depuração (breakpoints, inspeção de variáveis) de um trecho de código com erro proposital."
+    },
+    {
+      "numero": 24,
+      "titulo": "Controle de Versão de Software",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Controle de versão de software: conceito, segurança da informação, instalação e configuração."
+      ],
+      "atividade": "Configuração de um repositório de controle de versão para o projeto e primeiro commit."
+    },
+    {
+      "numero": 25,
+      "titulo": "Política de Recuperação de Dados em Programação",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Política de recuperação de dados em programação: conceito, análise periódica, procedimentos de backup e restore."
+      ],
+      "atividade": "Elaboração de uma rotina simples de backup dos dados do aplicativo desktop."
+    },
+    {
+      "numero": 26,
+      "titulo": "Distribuição do Aplicativo Desktop",
+      "indicadores": [
+        3,
+        4
+      ],
+      "conteudo": [
+        "Distribuição do aplicativo desktop."
+      ],
+      "atividade": "Geração de um pacote de instalação/distribuição do aplicativo desenvolvido."
+    },
+    {
+      "numero": 27,
+      "titulo": "Elaboração do Manual de Utilização do Software",
+      "indicadores": [
+        6
+      ],
+      "conteudo": [
+        "Elaboração do manual de utilização do projeto de software desenvolvido conforme orientação técnica."
+      ],
+      "atividade": "Redação do manual de utilização do aplicativo desktop desenvolvido pelo grupo."
+    },
+    {
+      "numero": 28,
+      "titulo": "Projeto Prático Integrado e Revisão Geral da UC12",
+      "indicadores": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "conteudo": [
+        "Revisão dos principais tópicos da UC12."
+      ],
+      "atividade": "Apresentação do aplicativo desktop completo (código, testes de compilação, integração com BD e manual); avaliação prática + lançamento dos indicadores (A/PA/NA) por aluno."
+    }
+  ]
+}

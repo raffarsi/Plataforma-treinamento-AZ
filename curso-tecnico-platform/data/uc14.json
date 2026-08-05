@@ -1,0 +1,176 @@
+{
+  "uc_code": "UC14",
+  "uc_title": "Manipular e Otimizar Imagens Vetoriais, Bitmaps, Gráficos e Elementos Visuais de Navegação para Web",
+  "carga_horaria_horas": 48,
+  "qualificacao": "Assistente de Desenvolvimento de Aplicativos Computacionais",
+  "indicadores": [
+    "Desenvolve wireframe e mapa do site de acordo com os princípios de arquitetura da informação.",
+    "Utiliza os principais formatos, resoluções e modos de cor conforme os critérios de publicação de imagens na web.",
+    "Realiza as operações de ajuste, recorte e retoque em imagens digitais de acordo com os requisitos de acessibilidade e usabilidade dos sites web.",
+    "Realiza otimização dos sites web conforme os requisitos de exportação de imagens.",
+    "Desenvolve leiaute de sites de acordo com os padrões de arquivos para internet e os requisitos de acessibilidade e usabilidade dos sites web."
+  ],
+  "aulas": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação da UC14 e Arquitetura da Informação",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Apresentação da UC14: competências, indicadores e critério de aprovação.",
+        "Arquitetura da informação: conceito e metodologias."
+      ],
+      "atividade": "Análise da arquitetura da informação de um site de referência escolhido pelo grupo."
+    },
+    {
+      "numero": 2,
+      "titulo": "Wireframes e Mapa do Site",
+      "indicadores": [
+        1
+      ],
+      "conteudo": [
+        "Desenvolvimento de wireframe e mapa do site."
+      ],
+      "atividade": "Elaboração de um wireframe e mapa do site para um projeto web fictício."
+    },
+    {
+      "numero": 3,
+      "titulo": "Conceitos de Imagem Digital — Pixel, Resolução, Vetor e Bitmap",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Conceitos e princípios de imagem digital. Pixel e resolução. Vetor e bitmap."
+      ],
+      "atividade": "Comparativo prático entre uma imagem vetorial e uma bitmap ampliadas (perda de qualidade)."
+    },
+    {
+      "numero": 4,
+      "titulo": "Teoria das Cores e Modos de Cor para Web",
+      "indicadores": [
+        2
+      ],
+      "conteudo": [
+        "Teoria das cores. Modos de cor conforme critérios de publicação na web (RGB, CMYK)."
+      ],
+      "atividade": "Elaboração de uma paleta de cores para web utilizando os modos de cor adequados."
+    },
+    {
+      "numero": 5,
+      "titulo": "Interface Gráfica — Importação, Exportação e Ferramentas de Desenho",
+      "indicadores": [
+        2,
+        3
+      ],
+      "conteudo": [
+        "Interface gráfica; importação e exportação; ferramentas de desenho."
+      ],
+      "atividade": "Exploração das ferramentas de desenho de um software de edição gráfica."
+    },
+    {
+      "numero": 6,
+      "titulo": "Painéis de Preenchimento, Contorno e Propriedades de Objetos",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Painéis de preenchimento e contorno; propriedades e atributos de objetos."
+      ],
+      "atividade": "Prática de aplicação de preenchimento e contorno em formas vetoriais."
+    },
+    {
+      "numero": 7,
+      "titulo": "Produção de Imagens Bitmap — Camadas e Filtros",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Produção de imagens bitmap. Camadas. Filtros."
+      ],
+      "atividade": "Composição de uma imagem com múltiplas camadas e aplicação de filtros."
+    },
+    {
+      "numero": 8,
+      "titulo": "Seleção, Recorte e Retoque de Imagens Digitais",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Seleção e recorte de imagens. Retoques de imagens."
+      ],
+      "atividade": "Prática de seleção, recorte e retoque de uma imagem digital fornecida pelo docente."
+    },
+    {
+      "numero": 9,
+      "titulo": "Tipografia e Grid em Projetos Visuais para Web",
+      "indicadores": [
+        3,
+        5
+      ],
+      "conteudo": [
+        "Tipografia. Grid."
+      ],
+      "atividade": "Aplicação de um sistema de grid e hierarquia tipográfica no wireframe do projeto."
+    },
+    {
+      "numero": 10,
+      "titulo": "Gráficos Vetoriais — Preenchimento, Edição de Linhas e Pincéis",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Gráficos vetoriais. Preenchimento, edição de linhas. Pincéis."
+      ],
+      "atividade": "Criação de um ícone ou elemento gráfico vetorial simples para o projeto."
+    },
+    {
+      "numero": 11,
+      "titulo": "Transformações de Objetos e Texto",
+      "indicadores": [
+        3
+      ],
+      "conteudo": [
+        "Transformações de objetos. Texto."
+      ],
+      "atividade": "Aplicação de transformações (rotação, escala, distorção) em objetos e textos do projeto."
+    },
+    {
+      "numero": 12,
+      "titulo": "Otimização e Exportação de Imagens para Web",
+      "indicadores": [
+        4
+      ],
+      "conteudo": [
+        "Otimização e exportação de imagens para web."
+      ],
+      "atividade": "Exportação das imagens do projeto em diferentes formatos e comparação de tamanho/qualidade."
+    },
+    {
+      "numero": 13,
+      "titulo": "Protótipos Interativos e Leiaute de Sites",
+      "indicadores": [
+        5
+      ],
+      "conteudo": [
+        "Wireframes e protótipos interativos. Leiaute."
+      ],
+      "atividade": "Elaboração de um protótipo interativo de leiaute de site com foco em acessibilidade e usabilidade."
+    },
+    {
+      "numero": 14,
+      "titulo": "Projeto Prático Integrado e Revisão Geral da UC14",
+      "indicadores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "conteudo": [
+        "Revisão dos principais tópicos da UC14."
+      ],
+      "atividade": "Apresentação do leiaute completo do site (wireframe + imagens otimizadas + protótipo); avaliação prática + lançamento dos indicadores (A/PA/NA) por aluno."
+    }
+  ]
+}
