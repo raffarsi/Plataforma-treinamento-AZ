@@ -514,6 +514,7 @@ body.pre-auth .student-badge {
 .landing-hero { text-align: center; padding: 3rem 1rem; max-width: 760px; margin: 0 auto; }
 .landing-hero h1 { font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem; }
 .landing-hero .lead { margin: 0 auto 2.5rem; }
+.landing-hero #azurehub-back-btn { margin-bottom: 1.5rem; }
 
 .landing-tracks {
   display: grid;
