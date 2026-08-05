@@ -290,31 +290,72 @@ function goToLogin() {
 // 7) MÓDULO 0 — LANDING PAGE (escolha de trilha)
 // ----------------------------------------------------------------------------
 RENDERERS.landing = function renderLanding() {
-  const el = document.getElementById("screen-landing");
-  el.innerHTML = `
-    <div class="landing-hero">
-      <h1>Plataforma de Certificações Microsoft</h1>
-      <p class="lead">Aprenda, pratique e teste seus conhecimentos através de simulados e gamificação.</p>
-      <div class="landing-tracks">
-        <button class="track-card track-active" id="track-az900">
-          <span class="track-icon">☁️</span>
-          <h3>AZ-900</h3>
-          <p>Microsoft Azure Fundamentals</p>
-        </button>
-        <button class="track-card track-active" id="track-ai900">
-          <span class="track-icon">🤖</span>
-          <h3>AI-901</h3>
-          <p>Microsoft AI Fundamentals</p>
-        </button>
-      </div>
-    </div>
-  `;
-  document.getElementById("track-az900").addEventListener("click", goToLogin);
-  document.getElementById("track-ai900").addEventListener("click", () => {
-    window.location.href = "ai901-platform/index.html";
-  });
+    const el = document.getElementById("screen-landing");
+    el.innerHTML = `
+        <div class="landing-hero">
+              <h1>Plataforma de Certificações Microsoft</h1>
+                    <p class="lead">Aprenda, pratique e teste seus conhecimentos através de simulados e gamificação.</p>
+                          <div class="landing-tracks">
+                                  <button class="track-card track-active" id="track-azure">
+                                            <span class="track-icon">☁️</span>
+                                                      <h3>Azure</h3>
+                                                                <p>AZ-900 · AI-901 · DP-900</p>
+                                                                        </button>
+                                                                                <button class="track-card track-disabled" id="track-tecnico" disabled>
+                                                                                          <span class="track-icon">💻</span>
+                                                                                                    <h3>Curso Técnico em Informática</h3>
+                                                                                                              <p>Formação técnica completa</p>
+                                                                                                                        <span class="track-badge">Em desenvolvimento. Disponível em breve.</span>
+                                                                                                                                </button>
+                                                                                                                                        <button class="track-card track-disabled" id="track-msproject" disabled>
+                                                                                                                                                  <span class="track-icon">📋</span>
+                                                                                                                                                            <h3>MS-Project</h3>
+                                                                                                                                                                      <p>Gestão de projetos com Microsoft Project</p>
+                                                                                                                                                                                <span class="track-badge">Em desenvolvimento. Disponível em breve.</span>
+                                                                                                                                                                                        </button>
+                                                                                                                                                                                              </div>
+                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                    `;
+    document.getElementById("track-azure").addEventListener("click", () => showScreen("azurehub"));
 };
 
+// ----------------------------------------------------------------------------
+// 7b) MÓDULO 0b — HUB AZURE (escolha de certificação dentro da trilha Azure)
+// ----------------------------------------------------------------------------
+RENDERERS.azurehub = function renderAzureHub() {
+    const el = document.getElementById("screen-azurehub");
+    el.innerHTML = `
+        <div class="landing-hero">
+              <button class="btn btn-secondary" id="azurehub-back-btn">← Voltar</button>
+                    <h1>☁️ Trilha Azure</h1>
+                          <p class="lead">Escolha a certificação Microsoft Azure que deseja estudar.</p>
+                                <div class="landing-tracks">
+                                        <button class="track-card track-active" id="track-az900">
+                                                  <span class="track-icon">☁️</span>
+                                                            <h3>AZ-900</h3>
+                                                                      <p>Microsoft Azure Fundamentals</p>
+                                                                              </button>
+                                                                                      <button class="track-card track-active" id="track-ai901">
+                                                                                                <span class="track-icon">🤖</span>
+                                                                                                          <h3>AI-901</h3>
+                                                                                                                    <p>Microsoft AI Fundamentals</p>
+                                                                                                                            </button>
+                                                                                                                                    <button class="track-card track-disabled" id="track-dp900" disabled>
+                                                                                                                                              <span class="track-icon">📊</span>
+                                                                                                                                                        <h3>DP-900</h3>
+                                                                                                                                                                  <p>Microsoft Azure Data Fundamentals</p>
+                                                                                                                                                                            <span class="track-badge">Em desenvolvimento. Disponível em breve.</span>
+                                                                                                                                                                                    </button>
+                                                                                                                                                                                          </div>
+                                                                                                                                                                                              </div>
+                                                                                                                                                                                                `;
+    document.getElementById("azurehub-back-btn").addEventListener("click", () => showScreen("landing"));
+    document.getElementById("track-az900").addEventListener("click", goToLogin);
+    document.getElementById("track-ai901").addEventListener("click", () => {
+          window.location.href = "ai901-platform/index.html";
+    });
+  
+};
 // ----------------------------------------------------------------------------
 // 8) IDENTIFICAÇÃO DO ALUNO
 // ----------------------------------------------------------------------------
