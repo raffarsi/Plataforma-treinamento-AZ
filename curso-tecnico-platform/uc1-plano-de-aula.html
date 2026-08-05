@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UC1 — Plano de Aula | Curso Técnico em Informática</title>
+<meta name="description" content="Plano de aula da UC1 (Planejar e executar a montagem de computadores) — Curso Técnico em Informática, Senac. Uso do docente." />
+<style>
+  :root {
+    --color-primary: #0078D4;
+    --color-primary-dark: #005A9E;
+    --color-accent: #50E6A5;
+    --color-warning: #FFB900;
+    --bg-body: #F3F2F1;
+    --bg-surface: #FFFFFF;
+    --bg-surface-alt: #F7F9FB;
+    --bg-header: #FFFFFF;
+    --text-primary: #201F1E;
+    --text-secondary: #605E5C;
+    --border-color: #E1DFDD;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --radius: 8px;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg-body);
+    color: var(--text-primary);
+    font-family: "Segoe UI", "Segoe UI Web", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--color-primary); }
+  h1, h2, h3, h4 { font-weight: 600; margin-top: 0; }
+
+  header.page-header {
+    background: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.9rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: var(--shadow);
+  }
+  .brand { font-weight: 700; font-size: 1.1rem; color: var(--color-primary); }
+  .back-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.45rem 0.85rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-primary);
+    background: var(--bg-surface-alt);
+  }
+
+  main { max-width: 980px; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+
+  .docente-banner {
+    background: #FFF8E6;
+    border: 1px solid var(--color-warning);
+    border-radius: var(--radius);
+    padding: 0.85rem 1.1rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #6B5500;
+  }
+
+  .uc-summary {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.75rem;
+  }
+  .uc-summary h1 { font-size: 1.5rem; }
+  .uc-summary .meta {
+    display: flex; flex-wrap: wrap; gap: 0.6rem;
+    margin: 0.75rem 0 1.25rem;
+  }
+  .badge {
+    background: var(--bg-surface-alt);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+  }
+  .badge strong { color: var(--text-primary); }
+
+  .indicadores-list { margin: 0; padding-left: 1.2rem; }
+  .indicadores-list li { margin-bottom: 0.4rem; font-size: 0.92rem; }
+
+  .index-jump {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.4rem;
+    margin-top: 1rem;
+  }
+  .index-jump a {
+    display: block;
+    font-size: 0.82rem;
+    text-decoration: none;
+    background: var(--bg-surface-alt);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 0.4rem 0.6rem;
+    color: var(--text-primary);
+  }
+  .index-jump a:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+  .aula-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.25rem 1.4rem;
+    margin-bottom: 1.1rem;
+    scroll-margin-top: 5.5rem;
+  }
+  .aula-card h2 {
+    font-size: 1.05rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  .aula-num {
+    color: #fff;
+    background: var(--color-primary);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    padding: 0.15rem 0.65rem;
+    font-weight: 700;
+  }
+  .aula-indicadores {
+    display: flex; gap: 0.35rem; flex-wrap: wrap; margin: 0.4rem 0 0.85rem;
+  }
+  .ind-badge {
+    font-size: 0.72rem;
+    background: #E9F5EE;
+    color: #1B7A43;
+    border-radius: 999px;
+    padding: 0.15rem 0.55rem;
+    border: 1px solid #BFE6CD;
+  }
+  .aula-card h4 {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-secondary);
+    margin: 0.9rem 0 0.4rem;
+  }
+  .aula-card ul { margin: 0; padding-left: 1.15rem; }
+  .aula-card li { font-size: 0.92rem; margin-bottom: 0.3rem; }
+  .atividade-box {
+    background: var(--bg-surface-alt);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 4px;
+    padding: 0.65rem 0.85rem;
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+  }
+
+  footer.page-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding: 2rem 1rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <span class="brand">💻 Curso Técnico em Informática — Plano de Aula</span>
+  <a class="back-link" href="../index.html">⬅️ Voltar ao portal</a>
+</header>
+
+<main>
+
+  <div class="docente-banner">
+    📋 <strong>Página de uso do docente.</strong> Conteúdo de planejamento de aula — ainda não vinculado à navegação pública do aluno. Baseado no Plano de Curso nº 297 (Habilitação Profissional Técnica em Informática, Senac São Paulo).
+  </div>
+
+  <div class="uc-summary">
+    <h1>UC1 — Planejar e executar a montagem de computadores</h1>
+    <div class="meta">
+      <span class="badge">Carga horária: <strong>84 horas</strong></span>
+      <span class="badge">Duração da aula: <strong>3h30</strong></span>
+      <span class="badge">Total de aulas: <strong>24</strong></span>
+      <span class="badge">Frequência mínima: <strong>75%</strong> (até 6 faltas nesta UC)</span>
+      <span class="badge">Qualificação: <strong>Assistente de Suporte e Manutenção de Computadores</strong></span>
+    </div>
+
+    <h3>Indicadores de avaliação da UC1</h3>
+    <ol class="indicadores-list">
+      <li>Descreve as funcionalidades e aplicações da arquitetura de computadores, de acordo com as orientações técnicas do fabricante.</li>
+      <li>Utiliza medidas de prevenção contra descargas eletrostáticas, de acordo com as orientações do fabricante.</li>
+      <li>Testa componentes de computadores e periféricos, de acordo com as recomendações técnicas.</li>
+      <li>Configura os componentes do computador conforme recomendações técnicas.</li>
+      <li>Monta computadores conforme as recomendações e os procedimentos técnicos de fabricantes.</li>
+      <li>Configura os parâmetros de inicialização da máquina conforme recomendações técnicas.</li>
+      <li>Realiza inspeção final do equipamento conforme recomendações técnicas.</li>
+    </ol>
+
+    <h3>Índice das aulas</h3>
+    <div class="index-jump" id="index-jump"></div>
+  </div>
+
+  <div id="aulas-container"></div>
+
+</main>
+
+<footer class="page-footer">
+  Curso Técnico em Informática — Plano de aula gerado a partir do Plano de Curso nº 297 (Senac São Paulo). Documento de apoio interno do docente.
+</footer>
+
+<script>
+const AULAS = [
+  {
+    numero: 1,
+    titulo: "Apresentação da UC e Sistema Operacional (parte 1)",
+    indicadores: [1],
+    conteudo: [
+      "Apresentação da UC1: competências, indicadores de avaliação e critério de aprovação (75% de frequência).",
+      "Sistemas operacionais: arquitetura aberta x fechada.",
+      "Versões e distribuições de sistemas operacionais.",
+      "Estrutura do sistema de arquivos."
+    ],
+    atividade: "Quiz diagnóstico de nivelamento + roda de conversa: 'quais sistemas operacionais vocês já usaram?'"
+  },
+  {
+    numero: 2,
+    titulo: "Sistema Operacional (parte 2)",
+    indicadores: [1],
+    conteudo: [
+      "Contas de usuário e privilégios.",
+      "Ambiente e elementos da área de trabalho.",
+      "Compactação e descompactação de arquivos e pastas.",
+      "Gravação em mídias."
+    ],
+    atividade: "Prática guiada em laboratório: criar conta padrão/administrador, compactar arquivos e gravar em mídia/pendrive."
+  },
+  {
+    numero: 3,
+    titulo: "Sistemas Numéricos",
+    indicadores: [1],
+    conteudo: [
+      "Sistemas binário, decimal, octal e hexadecimal.",
+      "Conversão entre bases numéricas.",
+      "Unidades de medida de armazenamento: bit, byte, KB, MB, GB, TB, PB.",
+      "Unidades de medida de processamento: clock, Hz, MHz, GHz."
+    ],
+    atividade: "Exercícios de conversão entre bases + desafio rápido 'quantos bytes tem isso?'"
+  },
+  {
+    numero: 4,
+    titulo: "Fundamentos de Arquitetura de Computadores",
+    indicadores: [1],
+    conteudo: [
+      "Barramentos, unidade lógica aritmética (ULA), registradores, unidade de controle.",
+      "Memória principal e secundária.",
+      "Controladores de entrada e saída.",
+      "Tipos de encapsulamento: DIP, TQFP, SOJ, TSOP."
+    ],
+    atividade: "Diagrama em grupo da arquitetura de um computador, relacionando cada bloco a um componente físico real."
+  },
+  {
+    numero: 5,
+    titulo: "Fundamentos de Eletricidade e Eletrônica (parte 1)",
+    indicadores: [1],
+    conteudo: [
+      "Conceitos de eletricidade: geração, distribuição e consumo.",
+      "Padrões monofásico, bifásico e trifásico.",
+      "Grandezas elétricas: tensão, corrente, resistência, potência, frequência.",
+      "Leis de Ohm e de Kirchhoff."
+    ],
+    atividade: "Exercícios de cálculo de tensão, corrente e resistência aplicando a Lei de Ohm."
+  },
+  {
+    numero: 6,
+    titulo: "Fundamentos de Eletricidade e Eletrônica (parte 2)",
+    indicadores: [1, 2],
+    conteudo: [
+      "Corrente contínua x corrente alternada; onda senoidal.",
+      "Riscos da corrente elétrica.",
+      "Componentes discretos e SMD: capacitores, resistores, diodos, transistores, transformadores, indutores.",
+      "Circuitos retificadores de meia onda e onda completa."
+    ],
+    atividade: "Identificação visual de componentes eletrônicos em placas reais ou de sucata."
+  },
+  {
+    numero: 7,
+    titulo: "Multímetros",
+    indicadores: [2, 3],
+    conteudo: [
+      "Tipos de multímetro e procedimentos de utilização (potência, valores, escala).",
+      "Teste de resistores, fusíveis, potenciômetros, capacitores, diodos e transistores."
+    ],
+    atividade: "Prática em bancada: medir tensão e resistência, testar continuidade em componentes."
+  },
+  {
+    numero: 8,
+    titulo: "Aterramento e Proteção Eletrostática (ESD)",
+    indicadores: [2],
+    conteudo: [
+      "Conceitos, tipos e funcionalidades do aterramento.",
+      "Pulseira e manta antiestática para bancada.",
+      "Riscos de descarga eletrostática em componentes sensíveis."
+    ],
+    atividade: "Simulação de manuseio seguro de uma placa-mãe usando pulseira ESD."
+  },
+  {
+    numero: 9,
+    titulo: "Componentes de Hardware I — Placa-mãe e Chipset",
+    indicadores: [1],
+    conteudo: [
+      "Placa-mãe: componentes e conectores.",
+      "Chipset: funções, fabricantes, Ponte Norte e Ponte Sul."
+    ],
+    atividade: "Aula prática de reconhecimento: identificar componentes numa placa-mãe real."
+  },
+  {
+    numero: 10,
+    titulo: "Componentes de Hardware II — Processadores",
+    indicadores: [1],
+    conteudo: [
+      "Características e tecnologias proprietárias de processadores.",
+      "Tipos e aplicações de processadores, tipo de soquete e refrigeração."
+    ],
+    atividade: "Pesquisa comparativa entre dois processadores (especificações) com apresentação rápida."
+  },
+  {
+    numero: 11,
+    titulo: "Memórias RAM e ROM",
+    indicadores: [1, 4],
+    conteudo: [
+      "Memória RAM: função, unidade de medida, modos de transferência (SDR, DDR).",
+      "Tipos de memória ROM: ROM, PROM, EPROM, EEPROM, FLASHROM."
+    ],
+    atividade: "Manuseio prático: instalação e remoção correta de módulos de memória no slot."
+  },
+  {
+    numero: 12,
+    titulo: "Memória Cache e Hierarquia de Memória",
+    indicadores: [1],
+    conteudo: [
+      "Cache L1, L2 e L3.",
+      "Hierarquia de memória: principal, secundária e cache.",
+      "Características técnicas e slots de expansão de memória."
+    ],
+    atividade: "Diagrama da hierarquia de memória relacionando velocidade e custo."
+  },
+  {
+    numero: 13,
+    titulo: "Barramentos e Fonte de Alimentação",
+    indicadores: [1, 3],
+    conteudo: [
+      "Tipos de barramentos.",
+      "Fonte de alimentação: teste de fontes e conectorização."
+    ],
+    atividade: "Teste prático de fonte ATX (teste de curto no conector 24 pinos)."
+  },
+  {
+    numero: 14,
+    titulo: "Dispositivos de E/S e Slots de Expansão",
+    indicadores: [1, 4],
+    conteudo: [
+      "Dispositivos de entrada/saída e placas controladoras.",
+      "Slots de expansão (PCIe, M.2, SATA).",
+      "Fabricantes de componentes de hardware."
+    ],
+    atividade: "Identificação prática dos slots de expansão numa placa-mãe."
+  },
+  {
+    numero: 15,
+    titulo: "Unidades de Armazenamento",
+    indicadores: [1, 4],
+    conteudo: [
+      "HDs: tipos de conexão; SSDs e discos magnéticos.",
+      "Sistema RAID; estrutura física e lógica dos discos.",
+      "Unidades óticas, pen-drives e cartões de memória."
+    ],
+    atividade: "Comparativo prático HD x SSD (velocidade e conectores) e instalação de uma unidade de armazenamento."
+  },
+  {
+    numero: 16,
+    titulo: "Gabinetes",
+    indicadores: [1, 4],
+    conteudo: [
+      "Tipos de gabinete e especificação técnica.",
+      "Regras de conectorização e configuração de unidades de disco.",
+      "Conexões frontais e painéis do gabinete."
+    ],
+    atividade: "Prática de conectorização de painel frontal (power, reset, LEDs, USB) num gabinete de bancada."
+  },
+  {
+    numero: 17,
+    titulo: "Sistemas de Refrigeração",
+    indicadores: [1, 4],
+    conteudo: [
+      "Tipos de refrigeração: aircooling, imersão, chiller, water cooler.",
+      "Aplicações: gabinete, processador, memórias, discos, placas de vídeo."
+    ],
+    atividade: "Comparação de soluções de refrigeração e aplicação prática de pasta térmica."
+  },
+  {
+    numero: 18,
+    titulo: "Periféricos",
+    indicadores: [1],
+    conteudo: [
+      "Mouse, teclado, HDs externos, impressora, scanner, webcam, joystick, leitores de código de barras.",
+      "Microfone, caixas de áudio, projetor multimídia, estabilizadores e nobreaks.",
+      "Tecnologias wifi, bluetooth e IrDA."
+    ],
+    atividade: "Instalação e configuração de periféricos plug-and-play em estações de trabalho."
+  },
+  {
+    numero: 19,
+    titulo: "Equipamentos e Ferramentas de Medição e Montagem",
+    indicadores: [2, 3],
+    conteudo: [
+      "Testador de porta USB e testador de fonte de alimentação.",
+      "Ferramentas: chave-teste, luvas, pulseira ESD, alicates, chaves estrela/fenda/Philips, pinças, pasta térmica."
+    ],
+    atividade: "Montagem do kit de ferramentas do técnico e treino do uso correto de cada uma."
+  },
+  {
+    numero: 20,
+    titulo: "Manuais de Fabricantes e Compatibilidade",
+    indicadores: [1, 4],
+    conteudo: [
+      "Leitura de manuais técnicos.",
+      "Análise de compatibilidade entre placa-mãe, processador, memória RAM e placa de vídeo.",
+      "Cálculo de potência requerida para a fonte."
+    ],
+    atividade: "Exercício 'monte a configuração': escolher componentes compatíveis a partir de datasheets e calcular a potência da fonte."
+  },
+  {
+    numero: 21,
+    titulo: "Planejamento, Sustentabilidade e Organização da Montagem",
+    indicadores: [1],
+    conteudo: [
+      "Planejamento de recursos ferramentais para a montagem.",
+      "Descarte de resíduos (Lei de Política Nacional de Resíduos Sólidos).",
+      "Preparação do local de trabalho, segurança, riscos ergonômicos e elétricos.",
+      "Organização de recursos materiais e humanos."
+    ],
+    atividade: "Elaboração de um checklist de segurança e sustentabilidade para uma bancada de montagem."
+  },
+  {
+    numero: 22,
+    titulo: "Técnicas de Montagem I (prática guiada)",
+    indicadores: [2, 3, 4, 5],
+    conteudo: [
+      "Seleção do hardware e regras de conectorização.",
+      "Etapas da montagem: gabinete, placa-mãe, processador, memória, cooler."
+    ],
+    atividade: "Montagem prática supervisionada — parte 1: do gabinete até placa-mãe, CPU e memória instalados."
+  },
+  {
+    numero: 23,
+    titulo: "Técnicas de Montagem II + Inspeção Final e BIOS/Setup",
+    indicadores: [3, 4, 5, 6, 7],
+    conteudo: [
+      "Instalação de fonte, armazenamento, cabos e periféricos.",
+      "Inspeção final: conectorização, requisitos, registro de inconformidades.",
+      "BIOS/Setup: data/hora, ordem de boot, configurações de memória e HD, senhas, configuração padrão."
+    ],
+    atividade: "Montagem prática supervisionada — parte 2: finalização do PC, primeiro boot e configuração da BIOS."
+  },
+  {
+    numero: 24,
+    titulo: "Revisão Geral e Avaliação da UC1",
+    indicadores: [1, 2, 3, 4, 5, 6, 7],
+    conteudo: [
+      "Revisão dos principais tópicos da UC1.",
+      "Simulado de questões teóricas.",
+      "Avaliação prática final: montagem e inspeção supervisionada."
+    ],
+    atividade: "Avaliação prática + questionário de revisão; lançamento dos indicadores (A/PA/NA) por aluno."
+  }
+];
+
+const container = document.getElementById("aulas-container");
+const indexJump = document.getElementById("index-jump");
+
+AULAS.forEach(aula => {
+  const link = document.createElement("a");
+  link.href = "#aula-" + aula.numero;
+  link.textContent = "Aula " + aula.numero + " — " + aula.titulo;
+  indexJump.appendChild(link);
+
+  const card = document.createElement("div");
+  card.className = "aula-card";
+  card.id = "aula-" + aula.numero;
+
+  const indBadges = aula.indicadores.map(n => `<span class="ind-badge">Indicador ${n}</span>`).join("");
+  const conteudoItems = aula.conteudo.map(c => `<li>${c}</li>`).join("");
+
+  card.innerHTML = `
+    <h2><span class="aula-num">Aula ${aula.numero}</span> ${aula.titulo}</h2>
+    <div class="aula-indicadores">${indBadges}</div>
+    <h4>Conteúdo abordado</h4>
+    <ul>${conteudoItems}</ul>
+    <h4>Atividade sugerida</h4>
+    <div class="atividade-box">${aula.atividade}</div>
+  `;
+  container.appendChild(card);
+});
+</script>
+
+</body>
+</html>
