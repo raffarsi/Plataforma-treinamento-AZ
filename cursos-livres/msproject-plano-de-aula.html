@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MS Project — Gestão de Projetos | Cursos Livres</title>
+<meta name="description" content="Plano de curso e plano de aula — MS Project, Gestão de Projetos (32 horas), Senac São Paulo." />
+<style>
+  :root {
+    --color-primary: #0078D4;
+    --color-primary-dark: #005A9E;
+    --color-accent: #50E6A5;
+    --color-warning: #FFB900;
+    --bg-body: #F3F2F1;
+    --bg-surface: #FFFFFF;
+    --bg-surface-alt: #F7F9FB;
+    --bg-header: #FFFFFF;
+    --text-primary: #201F1E;
+    --text-secondary: #605E5C;
+    --border-color: #E1DFDD;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --radius: 8px;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg-body);
+    color: var(--text-primary);
+    font-family: "Segoe UI", "Segoe UI Web", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--color-primary); }
+  h1, h2, h3, h4 { font-weight: 600; margin-top: 0; }
+
+  header.page-header {
+    background: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.9rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: var(--shadow);
+  }
+  .brand { font-weight: 700; font-size: 1.1rem; color: var(--color-primary); }
+  .back-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.45rem 0.85rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-primary);
+    background: var(--bg-surface-alt);
+  }
+
+  main { max-width: 980px; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+
+  .info-banner {
+    background: #E9F5FE;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: var(--radius);
+    padding: 0.85rem 1.1rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #003a63;
+  }
+
+  .course-summary {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.75rem;
+  }
+  .course-summary h1 { font-size: 1.5rem; }
+  .course-summary .meta {
+    display: flex; flex-wrap: wrap; gap: 0.6rem;
+    margin: 0.75rem 0 1.25rem;
+  }
+  .badge {
+    background: var(--bg-surface-alt);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+  }
+  .badge strong { color: var(--text-primary); }
+
+  .section-block {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.75rem;
+  }
+  .section-block h2 { font-size: 1.15rem; margin-bottom: 0.75rem; }
+
+  .curriculo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+  .curriculo-grid h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+  }
+  .curriculo-grid ul { margin: 0; padding-left: 1.2rem; }
+  .curriculo-grid li { margin-bottom: 0.4rem; font-size: 0.9rem; }
+
+  .index-jump {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.4rem;
+    margin-top: 1rem;
+  }
+  .index-jump a {
+    display: block;
+    font-size: 0.82rem;
+    text-decoration: none;
+    background: var(--bg-surface-alt);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 0.4rem 0.6rem;
+    color: var(--text-primary);
+  }
+  .index-jump a:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+  .aula-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.25rem 1.4rem;
+    margin-bottom: 1.1rem;
+    scroll-margin-top: 5.5rem;
+  }
+  .aula-card h2 {
+    font-size: 1.05rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  .aula-num {
+    color: #fff;
+    background: var(--color-primary);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    padding: 0.15rem 0.65rem;
+    font-weight: 700;
+  }
+  .aula-card h4 {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-secondary);
+    margin: 0.9rem 0 0.4rem;
+  }
+  .aula-card ul { margin: 0; padding-left: 1.15rem; }
+  .aula-card li { font-size: 0.92rem; margin-bottom: 0.3rem; }
+  .atividade-box {
+    background: var(--bg-surface-alt);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 4px;
+    padding: 0.65rem 0.85rem;
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+  }
+
+  .biblio-list { margin: 0; padding-left: 1.2rem; }
+  .biblio-list li { margin-bottom: 0.5rem; font-size: 0.9rem; }
+
+  footer.page-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding: 2rem 1rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <span class="brand">📋 MS Project — Gestão de Projetos</span>
+  <a class="back-link" href="../index.html">⬅️ Voltar ao portal</a>
+</header>
+
+<main>
+
+  <div class="info-banner">
+    📋 <strong>Cursos Livres.</strong> Plano de curso baseado no Plano de Curso "MS Project – Gestão de Projetos" (Senac São Paulo, Ficha Técnica 21467, versão 3).
+  </div>
+
+  <div class="course-summary">
+    <h1>MS Project — Gestão de Projetos</h1>
+    <div class="meta">
+      <span class="badge">Eixo tecnológico: <strong>Informação e Comunicação</strong></span>
+      <span class="badge">Carga horária: <strong>32 horas</strong></span>
+      <span class="badge">Modalidade: <strong>Aperfeiçoamento</strong></span>
+      <span class="badge">Formato: <strong>Presencial</strong></span>
+      <span class="badge">Duração da aula: <strong>4h</strong></span>
+      <span class="badge">Total de aulas: <strong>8</strong></span>
+      <span class="badge">Frequência mínima: <strong>75%</strong></span>
+    </div>
+    <h3>Requisitos de acesso</h3>
+    <p>Ensino Médio Incompleto, no mínimo. Recomenda-se que o aluno tenha conhecimentos mínimos em Excel para bom desempenho no curso.</p>
+    <h3>Objetivo do curso</h3>
+    <p>Desenvolver o aluno para utilizar a ferramenta MS Project em gestão de projetos, explorando as principais funcionalidades de acordo com as melhores práticas de planejamento existentes no mercado. Destina-se a profissionais e/ou estudantes de engenharia, arquitetura, administração, tecnologia da informação e demais interessados em construir conhecimentos em MS Project aplicado ao planejamento e controle de projetos.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Organização curricular</h2>
+    <div class="curriculo-grid">
+      <div>
+        <h3>Conhecimentos</h3>
+        <ul>
+          <li>Introdução ao planejamento e gestão de projeto: declaração de escopo, EAP, cronograma, equipe.</li>
+          <li>Introdução à gestão de projetos com MS Project: tarefas, tempo, recursos, custo e riscos.</li>
+          <li>Criação de projetos: configurações, calendário, tabelas de entrada, agendamento manual/automático, modos de exibição.</li>
+          <li>Tarefas e etapas: nome, duração e predecessoras.</li>
+          <li>Recursos: tipos (trabalho, material e custos) e definição.</li>
+          <li>Linha de base e caminho crítico.</li>
+          <li>Gerenciamento do projeto: restrições, % concluída, custo previsto e realizado.</li>
+          <li>Relatórios: gráficos e analíticos.</li>
+          <li>Campos personalizados: lista de valores, indicadores gráficos, fórmulas, filtros.</li>
+          <li>Pool de recursos e múltiplos projetos: uso, criação, compartilhamento e subprojetos.</li>
+          <li>Relatórios gerenciais: análise do valor agregado e Curva S.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Habilidades</h3>
+        <ul>
+          <li>Planejar e controlar projetos.</li>
+          <li>Gerar relatórios gráficos.</li>
+          <li>Analisar relatórios gerenciais.</li>
+          <li>Efetuar cálculos relacionados a custos e tempo.</li>
+          <li>Criar subprojetos.</li>
+          <li>Trabalhar com pool de recursos.</li>
+          <li>Configurar impressão.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Atitudes / Valores</h3>
+        <ul>
+          <li>Visão sistêmica na análise de projeto e automatização de procedimentos.</li>
+          <li>Respeito e sigilo no desenvolvimento dos projetos.</li>
+          <li>Objetividade no controle sistemático dos projetos.</li>
+        </ul>
+      </div>
+    </div>
+    <h3 style="margin-top:1.25rem;">Índice das aulas</h3>
+    <div class="index-jump"><a href="#aula-1">Aula 1 — Fundamentos de Gestão de Projetos</a>
+<a href="#aula-2">Aula 2 — Introdução ao MS Project e Criação de Projetos</a>
+<a href="#aula-3">Aula 3 — Tarefas e Etapas do Projeto</a>
+<a href="#aula-4">Aula 4 — Recursos e Atribuições</a>
+<a href="#aula-5">Aula 5 — Linha de Base, Caminho Crítico e Controle do Projeto</a>
+<a href="#aula-6">Aula 6 — Relatórios e Campos Personalizados</a>
+<a href="#aula-7">Aula 7 — Pool de Recursos, Múltiplos Projetos e Impressão</a>
+<a href="#aula-8">Aula 8 — Relatórios Gerenciais e Avaliação Final</a></div>
+  </div>
+
+  <div id="aulas-container">
+    <div class="aula-card" id="aula-1">
+      <h2><span class="aula-num">Aula 1</span> Fundamentos de Gestão de Projetos</h2>
+      <h4>Conteúdo abordado</h4>
+      <ul><li>Introdução ao planejamento e gestão de projetos.</li><li>Declaração de escopo do projeto.</li><li>Estrutura Analítica do Projeto (EAP).</li><li>Cronograma do projeto.</li><li>Definição da equipe envolvida no projeto.</li></ul>
+      <h4>Atividade sugerida</h4>
+      <div class="atividade-box">Em grupo, elaborar a declaração de escopo e um esboço de EAP para um projeto fictício proposto pelo docente.</div>
+    </div>
+
+    <div class="aula-card" id="aula-2">
+      <h2><span class="aula-num">Aula 2</span> Introdução ao MS Project e Criação de Projetos</h2>
+      <h4>Conteúdo abordado</h4>
+      <ul><li>Introdução à gestão de projetos com o MS Project: tarefas, tempo, recursos materiais e humanos, custo e riscos.</li><li>Configurações iniciais do MS Project.</li><li>Calendário do projeto.</li><li>Tabelas de entrada de dados.</li><li>Agendamento manual e automático.</li><li>Modos de exibição.</li></ul>
+      <h4>Atividade sugerida</h4>
+      <div class="atividade-box">Criar um novo arquivo de projeto no MS Project, configurar o calendário e explorar os principais modos de exibição.</div>
+    </div>
+
+    <div class="aula-card" id="aula-3">
+      <h2><span class="aula-num">Aula 3</span> Tarefas e Etapas do Projeto</h2>
+      <h4>Conteúdo abordado</h4>
+      <ul><li>Tarefas e etapas: nome, duração e predecessoras.</li><li>Construção do cronograma inicial (diagrama de Gantt).</li></ul>
+      <h4>Atividade sugerida</h4>
+      <div class="atividade-box">Inserir a lista de tarefas do projeto fictício, definir durações e relações de predecessora/sucessora, gerando o diagrama de Gantt inicial.</div>
+    </div>
+
+    <div class="aula-card" id="aula-4">
+      <h2><span class="aula-num">Aula 4</span> Recursos e Atribuições</h2>
+      <h4>Conteúdo abordado</h4>
+      <ul><li>Recursos: tipos (trabalho, material e custos) e definição.</li><li>Atribuição de recursos às tarefas.</li></ul>
+      <h4>Atividade sugerida</h4>
+      <div class="atividade-box">Cadastrar o pool de recursos do projeto (equipe, materiais, custos) e atribuí-los às tarefas já cadastradas.</div>
+    </div>
+
+    <div class="aula-card" id="aula-5">
+      <h2><span class="aula-num">Aula 5</span> Linha de Base, Caminho Crítico e Controle do Projeto</h2>
+      <h4>Conteúdo abordado</h4>
+      <ul><li>Linha de base do projeto.</li><li>Caminho crítico.</li><li>Gerenciamento do projeto: restrições.</li><li>Porcentagem concluída.</li><li>Custo previsto e realizado.</li></ul>
+      <h4>Atividade sugerida</h4>
+      <div class="atividade-box">Salvar a linha de base do projeto, identificar o caminho crítico e simular o andamento (% concluída) de algumas tarefas.</div>
+    </div>
+
+    <div class="aula-card" id="aula-6">
+      <h2><span class="aula-num">Aula 6</span> Relatórios e Campos Personalizados</h2>
+      <h4>Conteúdo abordado</h4>
+      <ul><li>Relatórios: gráficos e analíticos.</li><li>Campos personalizados: lista de valores.</li><li>Indicadores gráficos.</li><li>Fórmulas e filtros.</li></ul>
+      <h4>Atividade sugerida</h4>
+      <div class="atividade-box">Gerar relatórios nativos do MS Project e criar ao menos um campo personalizado com indicador gráfico e filtro associado.</div>
+    </div>
+
+    <div class="aula-card" id="aula-7">
+      <h2><span class="aula-num">Aula 7</span> Pool de Recursos, Múltiplos Projetos e Impressão</h2>
+      <h4>Conteúdo abordado</h4>
+      <ul><li>Pool de recursos e múltiplos projetos: uso e criação.</li><li>Compartilhamento de recursos entre projetos.</li><li>Subprojetos.</li><li>Configuração de impressão.</li></ul>
+      <h4>Atividade sugerida</h4>
+      <div class="atividade-box">Consolidar dois projetos fictícios como subprojetos de um projeto mestre e configurar o layout de impressão do cronograma.</div>
+    </div>
+
+    <div class="aula-card" id="aula-8">
+      <h2><span class="aula-num">Aula 8</span> Relatórios Gerenciais e Avaliação Final</h2>
+      <h4>Conteúdo abordado</h4>
+      <ul><li>Relatórios gerenciais: análise do valor agregado.</li><li>Curva S.</li><li>Revisão geral do curso.</li></ul>
+      <h4>Atividade sugerida</h4>
+      <div class="atividade-box">Elaborar a Curva S e a análise de valor agregado do projeto desenvolvido ao longo do curso, com apresentação final para a turma.</div>
+    </div></div>
+
+  <div class="section-block">
+    <h2>Instalações e equipamentos</h2>
+    <p>Laboratório de informática com computador (processador Core i3 ou equivalente, 64 bits, 10 GB de espaço em disco livre, 4 GB de RAM) e os softwares Office (Excel), Visio e MS Project instalados.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Bibliografia</h2>
+    <h3>Básica</h3>
+    <ul class="biblio-list">
+      <li>SILVA, Jose Luiz da. <em>Gestão de projetos utilizando o Project.</em> São Paulo: Editora Senac, 2026.</li>
+    </ul>
+    <h3>Complementar</h3>
+    <ul class="biblio-list">
+      <li>FERREIRA, M. C. <em>Project Profissional 2013 — Guia Prático.</em> São Paulo: Editora Érica/Saraiva, 2013.</li>
+      <li>NOCERA, R. J. <em>Planejamento e Controle de Obras com MS Project.</em> Santo André: RJN, 2022.</li>
+    </ul>
+  </div>
+
+  <div class="section-block">
+    <h2>Certificação</h2>
+    <p>Ao aluno que concluir o curso com frequência igual ou superior a 75% da carga horária total é conferido o certificado de conclusão do curso MS Project — Gestão de Projetos.</p>
+  </div>
+
+</main>
+
+<footer class="page-footer">
+  Cursos Livres — MS Project. Conteúdo baseado no Plano de Curso Senac São Paulo (Ficha Técnica 21467).
+</footer>
+
+</body>
+</html>
