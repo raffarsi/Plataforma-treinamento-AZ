@@ -307,16 +307,16 @@ RENDERERS.landing = function renderLanding() {
                                                                                                               <p>Formação técnica completa</p>
                                                                                                                         <span class="track-badge">Em desenvolvimento. Disponível em breve.</span>
                                                                                                                                 </button>
-                                                                                                                                        <button class="track-card track-disabled" id="track-msproject" disabled>
-                                                                                                                                                  <span class="track-icon">📋</span>
-                                                                                                                                                            <h3>MS-Project</h3>
-                                                                                                                                                                      <p>Gestão de projetos com Microsoft Project</p>
-                                                                                                                                                                                <span class="track-badge">Em desenvolvimento. Disponível em breve.</span>
-                                                                                                                                                                                        </button>
+                                                                                                                                        <button class="track-card track-active" id="track-cursoslivres">
+                <span class="track-icon">📋</span>
+                          <h3>Cursos Livres</h3>
+                                    <p>MS Project e outras formações rápidas</p>
+                                            </button>
                                                                                                                                                                                               </div>
                                                                                                                                                                                                   </div>
                                                                                                                                                                                                     `;
     document.getElementById("track-azure").addEventListener("click", () => showScreen("azurehub"));
+    document.getElementById("track-cursoslivres").addEventListener("click", () => showScreen("cursoslivreshub"));
 };
 
 // ----------------------------------------------------------------------------
@@ -355,6 +355,31 @@ RENDERERS.azurehub = function renderAzureHub() {
           window.location.href = "ai901-platform/index.html";
     });
   
+};
+
+// ----------------------------------------------------------------------------
+// 7c) MODULO 0c -- HUB CURSOS LIVRES
+// ----------------------------------------------------------------------------
+RENDERERS.cursoslivreshub = function renderCursosLivresHub() {
+    const el = document.getElementById("screen-cursoslivreshub");
+    el.innerHTML = `
+        <div class="landing-hero">
+              <button class="btn btn-secondary" id="cursoslivres-back-btn">← Voltar</button>
+                    <h1>📋 Cursos Livres</h1>
+                          <p class="lead">Formações rápidas e complementares, fora das trilhas de certificação Microsoft.</p>
+                                <div class="landing-tracks">
+                                        <button class="track-card track-active" id="track-msproject-course">
+                                                  <span class="track-icon">📋</span>
+                                                            <h3>MS Project</h3>
+                                                                      <p>Gestão de projetos com Microsoft Project (32h)</p>
+                                                                              </button>
+                                                                                      </div>
+                                                                                          </div>
+                                                                                            `;
+    document.getElementById("cursoslivres-back-btn").addEventListener("click", () => showScreen("landing"));
+    document.getElementById("track-msproject-course").addEventListener("click", () => {
+          window.location.href = "cursos-livres/msproject-plano-de-aula.html";
+    });
 };
 // ----------------------------------------------------------------------------
 // 8) IDENTIFICAÇÃO DO ALUNO
