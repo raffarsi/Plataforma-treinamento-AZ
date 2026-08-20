@@ -340,12 +340,11 @@ RENDERERS.azurehub = function renderAzureHub() {
                                                                                                           <h3>AI-901</h3>
                                                                                                                     <p>Microsoft AI Fundamentals</p>
                                                                                                                             </button>
-                                                                                                                                    <button class="track-card track-disabled" id="track-dp900" disabled>
-                                                                                                                                              <span class="track-icon">📊</span>
-                                                                                                                                                        <h3>DP-900</h3>
-                                                                                                                                                                  <p>Microsoft Azure Data Fundamentals</p>
-                                                                                                                                                                            <span class="track-badge">Em desenvolvimento. Disponível em breve.</span>
-                                                                                                                                                                                    </button>
+                                                                                                                                    <button class="track-card track-active" id="track-dp900">
+  <span class="track-icon">📊</span>
+  <h3>DP-900</h3>
+  <p>Microsoft Azure Data Fundamentals</p>
+</button>
                                                                                                                                                                                           </div>
                                                                                                                                                                                               </div>
                                                                                                                                                                                                 `;
@@ -353,6 +352,9 @@ RENDERERS.azurehub = function renderAzureHub() {
     document.getElementById("track-az900").addEventListener("click", goToLogin);
     document.getElementById("track-ai901").addEventListener("click", () => {
           window.location.href = "ai901-platform/index.html";
+    });
+    document.getElementById("track-dp900").addEventListener("click", () => {
+          window.location.href = "dp900-platform/index.html";
     });
   
 };
