@@ -380,7 +380,7 @@ RENDERERS.cursoslivreshub = function renderCursosLivresHub() {
                                                                                             `;
     document.getElementById("cursoslivres-back-btn").addEventListener("click", () => showScreen("landing"));
     document.getElementById("track-msproject-course").addEventListener("click", () => {
-          window.location.href = "cursos-livres/msproject-plano-de-aula.html";
+          window.location.href = "msproject-platform/index.html";
     });
 };
 // ----------------------------------------------------------------------------
